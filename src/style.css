@@ -1,0 +1,251 @@
+
+
+.app {
+    background-color: #369CC0;
+    padding: 30px;
+    
+   
+}
+
+
+.row-body {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-img {
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    display:block;
+}
+
+@media only screen and (max-width: 712px) {
+    .login-img {
+      display:none;
+    }
+}
+
+.giris-control {
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 80px;
+    padding-top: 80px;
+}
+
+.button {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+    width: 365px;
+    height: 48px;
+
+    background: #39AAD2;
+    border-radius: 8px;
+
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.kartela-logo {
+    width: 344px;
+    height: 189px;
+}
+
+.row-1 {
+    display: flex;
+    width: 365px;
+    justify-content: center;
+    align-items: center;
+}
+
+.vector {
+    padding: 30px;
+}
+
+.Card-1 {
+  
+    width: 647px;
+    height: 409px;
+    background: #81E5D3;
+    border-radius: 41px;
+}
+
+.Card-2 {
+  
+    background: #369CC0;
+    border-radius: 41px;
+    width: 647px;
+    height: 191px;
+
+
+}
+
+.card-yazi-1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+
+    color: #369CC0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.card-yazi-2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+
+    color: #81E5D3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@media only screen and (max-width: 712px) {
+    .Card-1 {
+        width: 338px;
+        height: 100px;
+        margin-left: 26px;
+        margin-left: 26px;
+        background: #81E5D3;
+        border-radius: 41px;    
+    }
+}
+
+@media only screen and (max-width: 712px) {
+    .card-yazi-1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        
+        color: #369CC0;
+    }
+}
+
+@media only screen and (max-width: 712px) {
+    .Card-2 {
+        width: 338px;
+        height: 100px;
+        margin-left: 26px;
+        margin-left: 26px;
+        background: #369CC0;
+        border-radius: 41px;
+    }
+}
+
+@media only screen and (max-width: 712px) {
+    .card-yazi-2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        
+        color: #81E5D3;
+    }
+}
+
+.y-card-1 {
+  
+    width: 647px;
+    height: 195px;
+    background: #81E5D3;
+    border-radius: 41px;
+}
+
+.y-card-2 {
+  
+    width: 647px;
+    height: 191px;
+    background: #369CC0;
+    border-radius: 41px;
+
+}
+
+.y-card-yazi-1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    
+    color: #369CC0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.y-card-yazi-2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    
+    color: #81E5D3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@media only screen and (max-width: 712px) {
+    .y-card-1 {
+        width: 338px;
+        height: 100px;
+        margin-left: 26px;
+        margin-left: 26px;
+        background: #81E5D3;
+        border-radius: 41px;    
+    }
+}
+
+@media only screen and (max-width: 712px) {
+    .y-card-yazi-1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        
+        color: #369CC0;
+    }
+}
+
+@media only screen and (max-width: 712px) {
+    .y-card-2 {
+        width: 338px;
+        height: 100px;
+        margin-left: 26px;
+        margin-left: 26px;
+        background: #369CC0;
+        border-radius: 41px;
+    }
+}
+
+@media only screen and (max-width: 712px) {
+    .y-card-yazi-2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        
+        color: #81E5D3;
+    }
+}
+
+

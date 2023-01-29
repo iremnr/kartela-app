@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from './login_page.png';
+
+import './style.css'
+import Bootstrap from './Bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Login from './components/Login';
+import User_menu from './components/user_menu';
+import Yonetici_menu from './components/yonetici_menu';
+import { Routes, Route, Link, NavLink } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    /*<div className="App">
+      <div className="login_img">
+        <img src="/login_page.png" alt="" />
+      </div>
+      <div>
+        <Bootstrap />
+      </div>
+      
+
+    </div>*/
+      <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/menu" element={<User_menu />} />
+          <Route path="/yonetici-menu" element={<Yonetici_menu />} />
+       </Routes>
+      
+  
+
+    
+
   );
 }
 
