@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.logo {
+  box-sizing: border-box;
+  position: absolute;
+  width: 344px;
+  height: 189px;
+  left: 1341px;
+  top: 0px;
+  background: url(logoKartela.svg);
+}

@@ -1,0 +1,1207 @@
+.page-header{
+    background-color: green;
+  }
+  
+  .back-page-button{
+    position: fixed;
+    width:55px;
+    height:55px;
+    top:42px;
+    left:42px;
+    border:none;
+    background-color: transparent;
+  }
+  
+  .back-page-button:hover{
+    background-color: lightblue;
+    border-radius: 10px;
+    transition: 0.15s;
+  }
+  
+  .Back-page-figure{
+    width:45px;
+    height:45px;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width:820px){
+    .Back-page-figure{
+      left: 20px;
+      top:34px;
+      width: 34px;
+      height: 34px;
+    }
+  }
+  
+  .Kartela-logo {
+    /* default styling */
+    box-sizing: border-box;
+    position: absolute;
+    width: 344px;
+    height: 189px;
+  padding-top: 10px;
+    right: 0px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .Kartela-logo {
+      /* additional styling for screens 768px and above */
+      width: 50%;
+      height: auto;
+      top: 10px;
+      right: 10px;
+    }
+  }
+  
+  .Page-title {
+    position: absolute;
+    width: 394px;
+    height: 162px;
+    left: 693px;
+    top: 93px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    
+    color: #369CC0;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .Page-title {
+      width: 45%;
+      height: 162px;
+      left: 67px;
+      top: 144px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 41px;
+      text-align: center;
+      color: #369CC0;
+    }
+  }
+  
+  .Patient-name-title {
+    position: absolute;
+    width: 190px;
+    height: 24px;
+    left: 293px;
+    top: 218px;
+  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+  
+    color: #49444C;
+  }
+  
+  @media only screen and (max-width: 820px) {
+    .Patient-name-title {
+      position: absolute;
+      width: 205px;
+      height: 24px;
+      left: 48px;
+      top: 224px;
+  
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+  
+      color: #49444C;
+    }
+  }
+  
+  
+  .Patient-name-box input {
+    box-sizing: border-box;
+    position: absolute;
+    width: 429px;
+    height: 45.42px;
+    left: 293px;
+    top: 248px;
+    border: 1px solid #9C89B8;
+    border-radius: 8px;
+  }
+  
+  @media only screen and (max-width: 820px) {
+    .Patient-name-box input {
+      box-sizing: border-box;
+      position: absolute;
+      width: 302.72px;
+      height: 45.42px;
+      left: 48.28px;
+      top: 254px;
+      border: 1px solid #9C89B8;
+      border-radius: 8px;
+    }
+  }
+  
+  
+  .Patient-room-title {
+    position: absolute;
+    width: 98px;
+    height: 24.23px;
+    left: 293px;
+    top: 305px;
+  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #49444C;
+  }
+  
+  @media only screen and (max-width: 820px) {
+    .Patient-room-title {
+      position: absolute;
+      width: 69px;
+      height: 24px;
+      left: 48px;
+      top: 311px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+  
+      color: #49444C;
+    }
+  }
+  
+  .Patient-room-box select {
+    box-sizing: border-box;
+    position: absolute;
+    width: 429px;
+    height: 45.42px;
+    left: 293px;
+    top: 335px;
+    border: 1px solid #9C89B8;
+    border-radius: 8px;
+  }
+  
+  @media only screen and (max-width: 820px) {
+    .Patient-room-box select {
+      box-sizing: border-box;
+      position: absolute;
+      width: 303px;
+      height: 45px;
+      left: 48px;
+      top: 341px;
+      border: 1px solid #9C89B8;
+      border-radius: 8px;
+    }
+  }
+  
+  .Patient-age-title {
+    position: absolute;
+    width: 136px;
+    height: 24px;
+    left: 293px;
+    top: 393px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #49444C;
+  }
+  
+  @media only screen and (max-width: 820px) {
+    .Patient-age-title {
+      position: absolute;
+      width: 95.97px;
+      height: 24px;
+      left: 48.28px;
+      top: 399px;
+  
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+  
+      color: #49444C;
+    }
+  }
+  
+  .Patient-age-box input {
+    box-sizing: border-box;
+    position: absolute;
+    width: 429px;
+    height: 45.42px;
+    left: 293px;
+    top: 423px;
+    border: 1px solid #9C89B8;
+    border-radius: 8px;
+  }
+  
+  @media only screen and (max-width: 820px) {
+    .Patient-age-box input {
+      box-sizing: border-box;
+      position: absolute;
+      width: 302.72px;
+      height: 45.42px;
+      left: 48.28px;
+      top: 429px;
+      border: 1px solid #9C89B8;
+      border-radius: 8px;
+    }
+  }
+  
+  .Patient-gender-title {
+    position: absolute;
+    width: 98px;
+    height: 24.23px;
+    left: 293px;
+    top: 473px;
+  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+  
+    color: #49444C;
+  }
+  
+  @media only screen and (max-width: 820px) {
+    .Patient-gender-title {
+      position: absolute;
+      width: 69px;
+      height: 24px;
+      left: 48px;
+      top: 479px;
+  
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+  
+      color: #49444C;
+    }
+  }
+  
+  .Patient-gender-box select {
+    box-sizing: border-box;
+  
+    position: absolute;
+    width: 429px;
+    height: 45.42px;
+    left: 293px;
+    top: 503px;
+  
+    border: 1px solid #9C89B8;
+    border-radius: 8px;
+  }
+  
+  @media only screen and (max-width: 820px) {
+    .Patient-gender-box select {
+      box-sizing: border-box;
+  
+      position: absolute;
+      width: 303px;
+      height: 45px;
+      left: 48px;
+      top: 509px;
+  
+      border: 1px solid #9C89B8;
+      border-radius: 8px;
+    }
+  }
+  
+  .Patient-date-title {
+    position: absolute;
+    width: 49.93px;
+    height: 24.23px;
+    left: 293px;
+    top: 553px;
+  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+  
+    color: #49444C;
+  }
+  
+  @media only screen and (max-width: 820px) {
+    .Patient-date-title {
+      position: absolute;
+      width: 95.97px;
+      height: 24px;
+      left: 48.28px;
+      top: 559px;
+  
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+  
+      color: #49444C;
+    }
+  }
+  
+  .Patient-date-box input {
+    box-sizing: border-box;
+  
+    position: absolute;
+    width: 429px;
+    height: 45.42px;
+    left: 293px;
+    top: 583px;
+  
+    border: 1px solid #9C89B8;
+    border-radius: 8px;
+  }
+  
+  @media only screen and (max-width:820px) {
+    .Patient-date-box input {
+      box-sizing: border-box;
+      position: absolute;
+      width: 302.72px;
+      height: 45.42px;
+      left: 48.28px;
+      top: 589px;
+  
+      border: 1px solid #9C89B8;
+      border-radius: 8px;
+    }
+  }
+  
+  .Patient-hour-title {
+    position: absolute;
+    width: 99.85px;
+    height: 24.23px;
+    left: 293px;
+    top: 635px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #49444C;
+  }
+  
+  @media only screen and (max-width:820px) {
+    .Patient-hour-title {
+      position: absolute;
+      width: 69px;
+      height: 24px;
+      left: 48px;
+      top: 641px;
+  
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+  
+      color: #49444C;
+    }
+  }
+  
+  .Patient-hour-box select {
+    box-sizing: border-box;
+  
+    position: absolute;
+    width: 429px;
+    height: 45.42px;
+    left: 293px;
+    top: 665.28px;
+  
+    border: 1px solid #9C89B8;
+    border-radius: 8px;
+  }
+  
+  @media only screen and (max-width:820px) {
+    .Patient-hour-box select {
+      box-sizing: border-box;
+      position: absolute;
+      width: 302.72px;
+      height: 45.42px;
+      left: 48.28px;
+      top: 671.28px;
+  
+      border: 1px solid #9C89B8;
+      border-radius: 8px;
+  
+    }
+  }
+  
+  .Patient-category-title {
+    position: absolute;
+    width: 98px;
+    height: 24.23px;
+    left: 293px;
+    top: 715px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width:820px){
+    .Patient-category-title {
+      position: absolute;
+      width: 71px;
+      height: 24px;
+      left: 48px;
+      top: 720px;
+      
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      
+      color: #49444C;
+    }
+  }
+  
+  .Patient-category-box select {
+    box-sizing: border-box;
+    position: absolute;
+    width: 429px;
+    height: 45.42px;
+    left: 293px;
+    top: 745.28px;
+    border: 1px solid #9C89B8;
+    border-radius: 8px;
+  }
+  
+  @media only screen and (max-width:820px){
+    .Patient-category-box select {
+      box-sizing: border-box;
+      position: absolute;
+      width: 303px;
+      height: 46px;
+      left: 48px;
+      top: 745px;
+      
+      border: 1px solid #9C89B8;
+      border-radius: 8px;
+    }
+  }
+  
+  .button-text {
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  @media only screen and (max-width:820px){
+    .button-text {
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      padding-top: 10px;
+    }
+  }
+  
+  .submit-button {
+    position: absolute;
+    width: 429px;
+    height: 60.56px;
+    left: 293px;
+    top: 934px;
+  
+    border: none;
+    background: #369CC0;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width:820px){
+    .submit-button {
+      position: absolute;
+      width: 337px;
+      height: 60.56px;
+      left: 26px;
+      top: 827px;
+      background: #369CC0;
+      border-radius: 8px;
+    }
+  }
+  
+  .Calendar-title {
+    position: absolute;
+    width: 223.66px;
+    height: 52.7px;
+    left: 1148px;
+    top: 373px;
+  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 41px;
+  
+    color: #369CC0;
+  }
+  
+  @media only screen and (max-width:820px){
+    .Calendar-title {
+      position: absolute;
+      width: 174px;
+      height: 41px;
+      left: 136px;
+      top: 970px;
+      
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 41px;
+      /* identical to box height */
+      color: #369CC0;
+    }
+  }
+  
+  .Calendar-today {
+    box-sizing: border-box;
+  
+    position: absolute;
+    width: 255.59px;
+    height: 46.14px;
+    left: 1095.4px;
+    top: 436.98px;
+  
+    border: 1px solid #C4BEBE;
+    border-radius: 10px;
+  }
+  
+  @media only screen and (max-width:820px){
+    .Calendar-today {
+      box-sizing: border-box;
+  
+      position: absolute;
+      width: 198.84px;
+      height: 35.9px;
+      left: 95px;
+      top: 1030px;
+      
+      border: 1px solid #C4BEBE;
+      border-radius: 10px;
+    }
+  }
+  
+  .Calendar-today-text {
+    position: absolute;
+    width: 113.12px;
+    height: 20.57px;
+    left: 1172.53px;
+    top: 449.83px;
+  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+  
+    color: #000000;
+  
+  }
+  
+  .Today-task {
+    box-sizing: border-box;
+  
+    position: absolute;
+    width: 434.32px;
+    height: 49.44px;
+    left: 1005.43px;
+    top: 687.63px;
+    
+    background: #F9CCCC;
+    border: 2px solid #EDA9A9;
+    border-radius: 5px;
+  }
+  
+  .Today-task-text {
+    position: absolute;
+    width: 251.75px;
+    height: 26.37px;
+    left: 0px;
+    top: 0px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    
+    color: #000000;
+  }
+  
+  .Today-task-two {
+    box-sizing: border-box;
+  
+    position: absolute;
+    width: 434.32px;
+    height: 49.44px;
+    left: 1005.43px;
+    top: 748.05px;
+    
+    background: #D0F3CF;
+    border: 2px solid #99D6AA;
+    border-radius: 5px;
+  }
+  
+  .Today-task-two-text {
+    position: absolute;
+    width: 251.75px;
+    height: 26.37px;
+    left: 1145.71px;
+    top: 759.58px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    
+    color: #000000;
+  }
+  
+  @media only screen and (max-width:820px){
+    .Today-task {
+      box-sizing: border-box;
+  
+      position: absolute;
+      width: 337.88px;
+      height: 38.46px;
+      left: 25px;
+      top: 1200px;
+      
+      background: #F9CCCC;
+      border: 2px solid #EDA9A9;
+      border-radius: 5px;
+    }
+  }
+  
+  @media only screen and (max-width:820px){
+    .Today-task-two {
+      box-sizing: border-box;
+  
+      position: absolute;
+      width: 337.88px;
+      height: 38.46px;
+      left: 25px;
+      top: 1250px;
+      
+      background: #D0F3CF;
+      border: 2px solid #99D6AA;
+      border-radius: 5px;
+    }
+  }
+  
+  @media only screen and (max-width:820px){
+    .Today-task-text {
+      position: absolute;
+      width: 195.85px;
+      height: 20.51px;
+      left: 134.14px;
+      top: 1325px;
+      
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      
+      color: #000000;
+    }
+  }
+  
+  @media only screen and (max-width:820px){
+    .Today-task-two-text {
+      position: absolute;
+      width: 195.85px;
+      height: 20.51px;
+      left: 134.14px;
+      top: 800px;
+      
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      
+      color: #000000;
+    } 
+  }
+  
+  .Thats-all-text{
+  position: absolute;
+  width: 221px;
+  height: 23.07px;
+  left: 1064.55px;
+  top: 816.17px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  
+  color: #5E5757;
+  }
+  
+  @media only screen and (max-width:820px){
+    .Thats-all-text{
+      position: absolute;
+      width: 221px;
+      height: 23.07px;
+      left: 1064.55px;
+      top: 1400px;
+      
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      
+      color: #5E5757;
+      }
+  }
+  
+  
+  .Add-room-header{
+    position: absolute;
+  width: 229px;
+  height: 24px;
+  left: 635px;
+  top: 510px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  
+  color: #49444C;
+  }
+  
+  @media only screen and (max-width:820px){
+    .Add-room-header{
+      position: absolute;
+      width: 180.42px;
+      height: 24px;
+      left: 26px;
+      top: 256px;
+      
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      
+      color: #49444C;
+    }
+  }
+  .Add-room-box select{
+    box-sizing: border-box;
+    position: absolute;
+    width: 429px;
+    height: 45.42px;
+    left: 635px;
+    top: 540px;
+    border: 1px solid #9C89B8;
+    border-radius: 8px;
+  }
+  
+  @media only screen and (max-width:820px){
+    .Add-room-box select{
+      box-sizing: border-box;
+      position: absolute;
+      width: 338px;
+      height: 45.42px;
+      left: 26px;
+      top: 286px;
+      border: 1px solid #9C89B8;
+      border-radius: 8px;
+    }
+  }
+  
+  .Add-room-color-title {
+    position: absolute;
+    width: 57.32px;
+    height: 24.23px;
+    left: 635px;
+    top: 604px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    
+    color: #49444C;
+  }
+  
+  @media only screen and (max-width:820px) {
+    .Add-room-color-title{
+      position: absolute;
+      width: 180.42px;
+      height: 24px;
+      left: 26px;
+      top: 350px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+  
+      color: #49444C;
+    }
+  }
+  
+  .rec-buttons{
+  box-sizing: border-box;
+  position: absolute;
+  width: 55.47px;
+  height: 45.42px;
+  top: 634.28px;
+  border:none;
+  border-radius: 8px;
+  }
+  
+  .rec-buttons:nth-child(1) {
+    left: 635px;
+    background: #CEEDC7;
+  }
+  
+  .rec-buttons:nth-child(2){
+    left: 708.97px;
+    background: #FF9494;
+  }
+  
+  .rec-buttons:nth-child(3){
+    left: 782.93px;
+    background: #FFD4B2;
+  }
+  
+  .rec-buttons:nth-child(4){
+    left: 856.9px;
+    background: #FFF6BD;
+  }
+  
+  .rec-buttons:nth-child(5){
+    left: 930.86px;
+    background: #D7E3FC;
+  }
+  
+  .rec-buttons:nth-child(6){
+    left: 1008.53px;
+    background: #FFC8DD;
+   
+  }
+  
+  @media only screen and (max-width: 820px) {
+    .rec-buttons {
+      position: absolute;
+      width: 40px;
+      display: inline-block;
+      height: 40px;
+      top: 380px;
+      margin-bottom: 10px;
+    }
+    .rec-buttons:nth-child(1) {
+      left: 26px;
+      background: #CEEDC7;
+    }
+    
+    .rec-buttons:nth-child(2){
+      left: 84.28px;
+      background: #FF9494;
+    }
+    
+    .rec-buttons:nth-child(3){
+      left: 142.55px;
+      background: #FFD4B2;
+    }
+    
+    .rec-buttons:nth-child(4){
+      left: 200.83px;
+      background: #FFF6BD;
+    }
+    
+    .rec-buttons:nth-child(5){
+      left: 259.1px;
+      background: #D7E3FC;
+    }
+    
+    .rec-buttons:nth-child(6){
+      left: 320.29px;
+      background: #FFC8DD;
+     
+    }
+  }
+  
+  .Add-room-submit {
+    position: absolute;
+    width: 429px;
+    height: 60.56px;
+    left: 635px;
+    top: 778px;
+    display:flex;
+    border:none;
+    justify-content: center;
+    background: #9C89B8;
+    border-radius: 8px;
+  }
+  
+  @media only screen and (max-width:820px){
+    .Add-room-submit {
+      position: absolute;
+      width: 90%;
+      height: 60.56px;
+      left: 26px;
+      top: 524px;
+      display:flex;
+      border:none;
+      justify-content: center;
+      align-items: center;
+      background: #9C89B8;
+      border-radius: 8px;
+    }
+  }
+  
+  .Add-room-submit-text{
+    position: absolute;
+    width: 67px;
+    height: 32px;
+    left: 812px;
+    top: 793px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+  }
+  /*ODA EKLE SAYFA SONU*/
+  
+  /*TERAPİST EKLE SAYFASI*/
+  .Therapist-table-border{
+    box-sizing: border-box;
+  
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: absolute;
+    width: 1590px;
+    height: 319px;
+    left: 80px;
+    top: 276px;
+    
+    /* Light Grey */
+    
+    border: 1px solid #D0D0CE;
+  }
+  .Therapist-table-attr {
+    table-layout: fixed;
+    width: 100%;
+    /* Additional styles */
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+    background: #F8F8F8;
+    border: 1px solid #F9FBFC;
+    border-collapse: collapse;
+    font-family: 'Montserrat';
+  }
+  
+  .Therapist-table-attr table th {
+    width: 150px;
+    /* Additional styles */
+    height: 63px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+    letter-spacing: -0.005em;
+    /* Neural / 700 */
+    color: #6A6A65;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .Therapist-table-rows table td{
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 22px;
+    width: 150px;
+    height: 64px;
+    /* Shades / 0 */
+    background: #FFFFFF;
+    border-bottom: 1px solid #D0D0CE;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+  .Therapist-name-title{
+  position: absolute;
+  width: 229px;
+  height: 24px;
+  left: 103px;
+  top: 645px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  
+  color: #49444C;
+  }
+  
+  .Therapist-name-box {
+    box-sizing: border-box;
+  
+    position: absolute;
+    width: 429px;
+    height: 45.42px;
+    left: 103px;
+    top: 675px;
+    
+    border: 1px solid #9C89B8;
+    border-radius: 8px;
+  }
+  
+  .Therapist-field-name {
+    position: absolute;
+    width: 98px;
+    height: 24.23px;
+    left: 103px;
+    top: 739px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    
+    color: #49444C;
+  }
+  
+  .Therapist-field-box {
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 429px;
+  height: 45.42px;
+  left: 103px;
+  top: 769px;
+  
+  border: 1px solid #9C89B8;
+  border-radius: 8px;
+  }
+  .Therapist-submit-button{
+    position: absolute;
+    width: 429px;
+    height: 60.56px;
+    left: 100px;
+    top: 872px;
+    
+    background: #9C89B8;
+    border-radius: 8px;
+  }
+  
+  .Therapist-submit-text{
+  position: absolute;
+  width: 67px;
+  height: 32px;
+  left: 277px;
+  top: 887px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+  }

@@ -1,38 +1,261 @@
-.App {
+
+/*SEANS EKLE*/
+.page-container{
+  margin-bottom: 100px;
+}
+.prev-page{
+  width: 60px;
+  padding-top: 114px;
+}
+.kartela-logo{
+width: 344px;
+height: 189px;
+}
+
+.add-session-title{
+  width: 1fr;
+  margin-top: 8px;
+  font-family: 'Roboto';
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  color: #369CC0; 
 }
 
-.App-link {
-  color: #61dafb;
+.session-page-body{
+  padding-top: 40px;
+}
+.session-left{
+margin-left: 15px;
+align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.session-right{
+  margin-left: 5px;
 }
+
+.form-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  left: 293px;
+  width: 1fr;
+  margin-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  color: #49444C; 
+}
+
+.form-box{
+  box-sizing: border-box;
+  width: 429px;
+  height: 45.42px;
+  margin-left: 20px;
+  border: 2.5px solid #9C89B8;
+  border-radius: 8px;
+  padding-top: 2px;
+  padding-right: 30px;
+}
+
+.calendar-title{
+  justify-content: center;
+  margin-top: 90px;
+  padding-bottom: 40px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  color: #369CC0; 
+}
+
+.calendar-box{
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 100px;
+  padding-top: 45px;
+  border: 2.5px solid #C4BEBE;
+  border-radius: 10px;
+}
+
+.calendar-view{
+ width: fit-content;
+  background-color: purple;
+  padding-top: 30px;
+
+}
+
+.to-do-containers{
+  justify-content: center;
+}
+
+.to-do-one{
+  box-sizing: border-box;
+  width: 434.32px;
+  height: 49.44px;
+  left: 1005.43px;
+  top: 687.63px;
+  background: #F9CCCC;
+  border: 2px solid #EDA9A9;
+  border-radius: 5px; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px; 
+  color: #000000;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.to-do-line1{
+height: 0px;
+border: 1px solid #DE7E7E;
+transform: rotate(90deg);
+}
+
+.to-do-line2{
+height: 0px;
+border: 1px solid #9BE4B4;
+transform: rotate(90deg);
+}
+
+.to-do-two{
+  box-sizing: border-box;
+  width: 434.32px;
+  height: 49.44px;
+  left: 1005.43px;
+  top: 687.63px;
+  background: #D0F3CF;
+  border: 2px solid #99D6AA;
+  border-radius: 5px; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px; 
+  color: #000000; 
+}
+
+.today-text{
+  width: 221px;
+  height: 23.07px;
+  left: 1064.55px;
+  top: 816.17px;
+  margin-top: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #5E5757; 
+}
+
+.session-submit{
+  width: 429px;
+  height: 60.56px;
+  left: 293px;
+  top: 934px;
+  margin-top: 50px;
+  background: #369CC0;
+  border-radius: 8px;  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  border: 2px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+
+/*SEANS EKLE*/
+
+
+
+/*ODA EKLE*/
+.room-name{
+width: 229px;
+height: 24px;
+left: 635px;
+top: 510px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+color: #49444C;
+}
+
+.colors{
+  background-color: #000000;
+  width: 430px;
+  margin-left: 15px;
+}
+.green-button{
+  width: 55.47px;
+  height: 45.42px;;
+  background: #CEEDC7;
+  border-radius: 8px;
+  border: none;
+}
+
+.red-button{
+  width: 55.47px;
+  height: 45.42px;
+  background: #FF9494;
+  border-radius: 8px; 
+  border: none;
+}
+
+.orange-button{
+  width: 55.47px;
+  height: 45.42px;
+  background: #FFD4B2;
+  border-radius: 8px;
+  border: none;
+}
+
+.yellow-button{
+  width: 55.47px;
+  height: 45.42px;
+  background: #FFF6BD;
+  border-radius: 8px;
+  border: none;
+}
+
+.purple-button{
+  width: 55.47px;
+  height: 45.42px;
+  background: #D7E3FC;
+  border-radius: 8px;
+  border: none;
+}
+
+.pink-button{
+  width: 55.47px;
+  height: 45.42px;
+  background: #FFC8DD;
+  border-radius: 8px;
+  border: none;
+}
+
+.session-submit:hover{
+transition: 0.15s;
+background-color: #D0F3CF;
+}
+/*ODA EKLE*/
