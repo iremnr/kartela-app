@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #369CC0;
 }
 
 code {
@@ -12,12 +13,6 @@ code {
     monospace;
 }
 
-.logo {
-  box-sizing: border-box;
-  position: absolute;
-  width: 344px;
-  height: 189px;
-  left: 1341px;
-  top: 0px;
-  background: url(logoKartela.svg);
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

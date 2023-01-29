@@ -1,15 +1,35 @@
+//import logo from './login_page.png';
 
-import './App.css';
-import AddSession from './AddSession';
-import AddRoom from './AddRoom';
-import AddTherapist from './AddTherapist';
-import 'react-calendar/dist/Calendar.css'
-import Calendar from 'react-calendar'
+import './style.css'
+import Bootstrap from './Bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Login from './components/Login';
+import User_menu from './components/user_menu';
+import Yonetici_menu from './components/yonetici_menu';
+import { Routes, Route, Link, NavLink } from 'react-router-dom';
+
 function App() {
   return (
-     //<AddSession/>
-      <AddRoom/>
-      //<AddTherapist/>
+    /*<div className="App">
+      <div className="login_img">
+        <img src="/login_page.png" alt="" />
+      </div>
+      <div>
+        <Bootstrap />
+      </div>
+      
+
+    </div>*/
+      <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/menu" element={<User_menu />} />
+          <Route path="/yonetici-menu" element={<Yonetici_menu />} />
+       </Routes>
+      
+  
+
+    
+
   );
 }
 
