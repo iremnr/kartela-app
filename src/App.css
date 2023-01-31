@@ -93,7 +93,6 @@ align-items: center;
 
 .calendar-view{
  width: fit-content;
-  background-color: purple;
   padding-top: 30px;
   margin-left: 20px;
 
@@ -200,29 +199,42 @@ margin-left: 20px;
 
 
 /*ODA EKLE*/
+.room-body{
+  width: 1fr;
+}
 .room-name{
-width: 229px;
-height: 24px;
-left: 635px;
-top: 510px;
+  font-family: 'Roboto';
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #49444C;
+}
 
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-display: flex;
-align-items: center;
-color: #49444C;
+.color-box{ 
+  box-sizing: border-box;
+  justify-content: center;
+  width: 430px;
+  height: 45.42px;
+  border: 1px solid #9C89B8;
+  border-radius: 8px;
+}
+
+.color-box::after{ 
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .colors{
-  background-color: #000000;
-  width: 430px;
-  margin-left: 15px;
+  max-width: max-content;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
 }
 .green-button{
-  width: 55.47px;
+  width: 55px;
   height: 45.42px;;
   background: #CEEDC7;
   border-radius: 8px;
@@ -230,7 +242,9 @@ color: #49444C;
 }
 
 .red-button{
-  width: 55.47px;
+  padding-left: 1px;
+  padding-right: 1px;
+  width: 55px;
   height: 45.42px;
   background: #FF9494;
   border-radius: 8px; 
@@ -238,7 +252,7 @@ color: #49444C;
 }
 
 .orange-button{
-  width: 55.47px;
+  width: 55px;
   height: 45.42px;
   background: #FFD4B2;
   border-radius: 8px;
@@ -246,7 +260,7 @@ color: #49444C;
 }
 
 .yellow-button{
-  width: 55.47px;
+  width: 55px;
   height: 45.42px;
   background: #FFF6BD;
   border-radius: 8px;
@@ -254,7 +268,7 @@ color: #49444C;
 }
 
 .purple-button{
-  width: 55.47px;
+  width: 55px;
   height: 45.42px;
   background: #D7E3FC;
   border-radius: 8px;
@@ -262,15 +276,51 @@ color: #49444C;
 }
 
 .pink-button{
-  width: 55.47px;
+  width: 55px;
   height: 45.42px;
   background: #FFC8DD;
   border-radius: 8px;
   border: none;
 }
 
+.green-button:hover{
+  transition: 0.15s;
+  background-color: #88ee85;
+
+}
+
+.red-button:hover{
+  transition: 0.15s;
+  background: #f94e4e;
+
+}
+
+.orange-button:hover{
+  transition: 0.15s; 
+  background: #fa994f;
+
+}
+
+.yellow-button:hover{
+  transition: 0.15s;
+  background: #f7e25f;
+
+}
+
+.purple-button:hover{
+  transition: 0.15s;
+  background: #91b0f3;
+
+}
+
+.pink-button:hover{
+  transition: 0.15s;
+  background: #e28aac;
+
+}
+
 .session-submit:hover{
 transition: 0.15s;
-background-color: #D0F3CF;
+background-color:#1d7c9f;
 }
 /*ODA EKLE*/
