@@ -1,8 +1,8 @@
 import "@fontsource/roboto";
 import "@fontsource/montserrat";
-import "./App.css";
-import logo from "./logoKartela.svg";
-import figure from "./back-page.svg";
+import "../App.css";
+import logo from "../logoKartela.svg";
+import figure from "../back-page.svg";
 import { useState } from "react";
 import classNames from 'classnames';
 import { Button, Col, Container, Row } from "react-bootstrap";

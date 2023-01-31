@@ -1,15 +1,12 @@
 import "@fontsource/roboto";
 import { useState } from "react";
-import "./App.css";
-import logo from "./logoKartela.svg";
-import figure from "./back-page.svg";
+import "../App.css";
+import logo from "../logoKartela.svg";
+import figure from "../back-page.svg";
 import 'react-calendar/dist/Calendar.css'
 import { Button, Col, Container, Row } from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
 import FieldGroup from 'react-bootstrap/Form';
-import FormGroup from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/Form';
-import ControlLabel from 'react-bootstrap/Form';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
