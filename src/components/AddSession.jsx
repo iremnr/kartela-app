@@ -11,6 +11,7 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
+import { BsArrowLeftCircle } from "react-icons/bs";
 
 const rooms = [
     { key: "1", value: "Work" },
@@ -44,123 +45,121 @@ function AddSession() {
   const [time, setTime] = useState(null);
   const [category, setCategory] = useState();
   
+  document.title = "Seans Ekle";
+  
   return (
-    <Container fluid xs={6} sm ={4} md={4} lg={4} xl={4} className="page-container">
-      <Row className="page-header"> 
-        <Col sm ={{ order: 'last' }} md={{ order: 'last' }} lg={{ order: 'last' }}><img src={logo} className="kartela-logo" alt="logo" /></Col>
-        <Col xs={{ order: 'first' }} sm ={{ order: 'first' }} md={{ order: 'first' }} lg={{ order: 'first' }}><img src={figure} className="prev-page" alt="figure" /></Col>
-      </Row>
-      <Row className="add-session-title">SEANS EKLE</Row>
-      <Row className="session-page-body" xs={12} sm={12} md={8} lg={8} xl={8}>
+    <Container fluid xs={6} sm={4} md={4} lg={4} xl={4} className="page-container">
+      <Row className="page-header" xs={12} sm={12} md={12} lg={12} xl={12}>
+        <Col className="prev-page"> <BsArrowLeftCircle size={50} color="#369CC0"/></Col>
+      <Col><img src={logo} className="kartela-logo" alt="logo" /></Col>
+    </Row>
+    <Row className="add-session-title">SEANS EKLE</Row><Row className="session-page-body" xs={12} sm={12} md={8} lg={8} xl={8}>
         <Col className="session-left">
-        <Row className="form-title">DANIŞAN İSİM/SOYİSİM</Row>
-        <Row className="form-box">
-          <Form>
-          <FieldGroup
-          value={name}
-          id="formControlsText"
-          type="text"
-          label="Text"
-          placeholder="İsim ve soyisim giriniz"
-          onChange={e => setName(e.target.value)}
-        />
-          </Form>
-        </Row>
-        <Row className="form-title">ODA</Row>
-        <Row className="form-box">
-        <select value={room} onChange={(e) => setRoom(e.target.value)}>
-          {rooms.map((room) => (
-            <option value={room.key} key={room.key}>
-              {room.value}
-            </option>
-          ))}
-        </select>
-        </Row>
-        <Row className="form-title">YAŞ</Row>
-        <Row className="form-box">
-        <input
-          type="text"
-          placeholder="Yaşınızı giriniz"
-          value={age}
-          onChange={(e) => setAge(e.target.value)}
-        />
-        </Row>
-        <Row className="form-title">CİNSİYET</Row>
-        <Row className="form-box">
-        <select value={gender} onChange={(e) => setGender(e.target.value)}>
-          {genders.map((gender) => (
-            <option value={gender.key} key={gender.key}>
-              {gender.value}
-            </option>
-          ))}
-        </select>
+          <Row className="form-title">DANIŞAN İSİM/SOYİSİM</Row>
+          <Row className="form-box">
+            <Form>
+              <FieldGroup
+                value={name}
+                id="formControlsText"
+                type="text"
+                label="Text"
+                placeholder="İsim ve soyisim giriniz"
+                onChange={e => setName(e.target.value)} />
+            </Form>
+          </Row>
+          <Row className="form-title">ODA</Row>
+          <Row className="form-box">
+            <select value={room} onChange={(e) => setRoom(e.target.value)}>
+              {rooms.map((room) => (
+                <option value={room.key} key={room.key}>
+                  {room.value}
+                </option>
+              ))}
+            </select>
+          </Row>
+          <Row className="form-title">YAŞ</Row>
+          <Row className="form-box">
+            <input
+              type="text"
+              placeholder="Yaşınızı giriniz"
+              value={age}
+              onChange={(e) => setAge(e.target.value)} />
+          </Row>
+          <Row className="form-title">CİNSİYET</Row>
+          <Row className="form-box">
+            <select value={gender} onChange={(e) => setGender(e.target.value)}>
+              {genders.map((gender) => (
+                <option value={gender.key} key={gender.key}>
+                  {gender.value}
+                </option>
+              ))}
+            </select>
 
-        </Row>
-        <Row className="form-title">TARİH</Row>
-        <Row className="form-box">
-        <form>
-        <input type="date" value={date} onChange={e => setDate(e.target.value)} />
-      </form>
-        </Row>
-        <Row className="form-title">SAAT</Row>
-        <Row className="form-box">
-        <form>
-        <select value={time} onChange={e => setTime(e.target.value)}>
-          {hours.map(hour => (
-            <option value={hour} key={hour}>{hour}</option>
-          ))}
-        </select>
-      </form>
+          </Row>
+          <Row className="form-title">TARİH</Row>
+          <Row className="form-box">
+            <form>
+              <input type="date" value={date} onChange={e => setDate(e.target.value)} />
+            </form>
+          </Row>
+          <Row className="form-title">SAAT</Row>
+          <Row className="form-box">
+            <form>
+              <select value={time} onChange={e => setTime(e.target.value)}>
+                {hours.map(hour => (
+                  <option value={hour} key={hour}>{hour}</option>
+                ))}
+              </select>
+            </form>
 
-        </Row>
-        <Row className="form-title">KATEGORİ</Row>
-        <Row className="form-box">
-        <form>
-        <select value={category} onChange={(e) => setCategory(e.target.value)}>
-          <option value=""disabled>Kategori seçiniz</option>
-          {categories.map(category => (
-            <option value={category} key={category}>{category}</option>
-          ))}
-        </select>
-        </form>
+          </Row>
+          <Row className="form-title">KATEGORİ</Row>
+          <Row className="form-box">
+            <form>
+              <select value={category} onChange={(e) => setCategory(e.target.value)}>
+                <option value="" disabled>Kategori seçiniz</option>
+                {categories.map(category => (
+                  <option value={category} key={category}>{category}</option>
+                ))}
+              </select>
+            </form>
 
-        </Row>
-        <Row>
-        <Button className="session-submit" onClick={() => alert('Form Kaydedildi')}>KAYDET</Button>
-        </Row>
+          </Row>
+          <Row>
+            <Button className="session-submit" onClick={() => alert('Form Kaydedildi')}>KAYDET</Button>
+          </Row>
         </Col>
         <Col className="session-right" xs={12} sm={6} md={6}>
-        <Row className="calendar-view">
-        <FullCalendar
-        plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
-        initialView="dayGridMonth"
-        headerToolbar={{
-          center: 'dayGridMonth,timeGridWeek,timeGridDay new',
-        }}
-        customButtons={{
-          new: {
-            text: 'new',
-            click: () => console.log('new event'),
-          },
-        }}
-        events={events}
-        eventColor="lightpink"
-        nowIndicator
-        dateClick={(e) => console.log(e.dateStr)}
-        eventClick={(e) => console.log(e.event.id)}
-      />
-        </Row>
-        <Row className="to-do-one">
-          <Col className="to-do-hour">10.59 AM</Col>
-          <Col className="to-do-line1"></Col>
-          <Col className="to-do-message">Learn Design Pattern</Col>
-        </Row>
-        <Row className="to-do-two">
-          <Col className="to-do-hour">10.59 AM</Col>
-          <Col className="to-do-line2"></Col>
-          <Col className="to-do-message">Learn Design Pattern</Col>
-        </Row>
-        <Row className="today-text">That's all for today!</Row>
+          <Row className="calendar-view">
+            <FullCalendar
+              plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+              initialView="dayGridMonth"
+              headerToolbar={{
+                center: 'dayGridMonth,timeGridWeek,timeGridDay new',
+              }}
+              customButtons={{
+                new: {
+                  text: 'new',
+                  click: () => console.log('new event'),
+                },
+              }}
+              events={events}
+              eventColor="lightpink"
+              nowIndicator
+              dateClick={(e) => console.log(e.dateStr)}
+              eventClick={(e) => console.log(e.event.id)} />
+          </Row>
+          <Row className="to-do-one">
+            <Col className="to-do-hour">10.59 AM</Col>
+            <Col className="to-do-line1"></Col>
+            <Col className="to-do-message">Learn Design Pattern</Col>
+          </Row>
+          <Row className="to-do-two">
+            <Col className="to-do-hour">10.59 AM</Col>
+            <Col className="to-do-line2"></Col>
+            <Col className="to-do-message">Learn Design Pattern</Col>
+          </Row>
+          <Row className="today-text">That's all for today!</Row>
         </Col>
       </Row>
     </Container>
