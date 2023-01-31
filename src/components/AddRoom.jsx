@@ -24,6 +24,7 @@ function AddRoom(){
     'rec-pink': true
   });  
 
+  document.title = "Oda Ekle"
  return (
     <Container>
         <Row className="page-header"> 
