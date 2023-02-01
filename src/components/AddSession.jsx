@@ -50,7 +50,7 @@ function AddSession() {
   return (
     <Container fluid xs={6} sm={4} md={4} lg={4} xl={4} className="page-container">
       <Row className="page-header" xs={12} sm={12} md={12} lg={12} xl={12}>
-        <Col className="-page"> <BsArrowLeftCircle size={50} color="#369CC0"/></Col>
+        <Col className="prev-page"> <BsArrowLeftCircle size={50} color="#369CC0"/></Col>
       <Col><img src={logo} className="kartela-logo" alt="logo" /></Col>
     </Row>
     <Row className="add-session-title">SEANS EKLE</Row><Row className="session-page-body" xs={12} sm={12} md={8} lg={8} xl={8}>

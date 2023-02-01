@@ -6,6 +6,8 @@ import figure from "../back-page.svg";
 import { useState } from "react";
 import classNames from 'classnames';
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { BsArrowLeftCircle } from "react-icons/bs";
+
 
 const rooms = [
     { key: "1", value: "Work" },
@@ -28,7 +30,7 @@ function AddRoom(){
     <Container fluid>
         <Row className="page-header"> 
         <Col sm ={{ order: 'last' }} md={{ order: 'last' }} lg={{ order: 'last' }}><img src={logo} className="kartela-logo" alt="logo" /></Col>
-        <Col xs={{ order: 'first' }} sm ={{ order: 'first' }} md={{ order: 'first' }} lg={{ order: 'first' }}><img src={figure} className="prev-page" alt="figure" /></Col>
+        <Col className="prev-page"> <BsArrowLeftCircle size={50} color="#369CC0"/></Col>
       </Row>
       <Col className="room-body">
         <Row className="add-session-title">ODA EKLE</Row>
