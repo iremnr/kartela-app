@@ -9,6 +9,7 @@ import Yonetici_menu from './components/yonetici_menu';
 import AddRoom from './components/AddRoom';
 import AddSession from './components/AddSession';
 import { Routes, Route, Link, NavLink } from 'react-router-dom';
+import Sessions from './components/Sessions';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/yonetici-menu" element={<Yonetici_menu />} />
           <Route path="/seans-ekle" element={<AddSession />} />
           <Route path="/oda-ekle" element={<AddRoom />} />
+          <Route path="/seanslarim" element={<Sessions/>} />
        </Routes>
       
   
