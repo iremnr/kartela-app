@@ -24,11 +24,9 @@ function User_menu() {
                     <div className="Card-1 mb-8">
                         <h1 className='card-yazi-1'>ETKİNLİK OLUŞTUR</h1>
                     </div>
-                
                 </Col>
 
                 <Col md={6}>
-                    
                     <div className="Card-1 mb-8" >
                         <h1 className='card-yazi-1'>SEANS OLUŞTUR</h1>
                     </div>
