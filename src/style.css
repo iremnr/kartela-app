@@ -1,12 +1,13 @@
-
-
 .app {
-    background-color: #369CC0;
-    padding: 30px;
-    
-   
+    background-color: #369CC0;   
 }
 
+.row-out {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .row-body {
     display: flex;
@@ -15,7 +16,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .login-img {
@@ -81,6 +81,9 @@
     height: 409px;
     background: #81E5D3;
     border-radius: 41px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .Card-2 {

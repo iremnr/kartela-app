@@ -14,16 +14,8 @@ import Sessions from './components/Sessions';
 
 function App() {
   return (
-    /*<div className="App">
-      <div className="login_img">
-        <img src="/login_page.png" alt="" />
-      </div>
-      <div>
-        <Bootstrap />
-      </div>
-      
 
-    </div>*/
+
       <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/menu" element={<User_menu />} />
@@ -33,9 +25,6 @@ function App() {
           <Route path="/seanslarim" element={<Sessions/>} />
        </Routes>
       
-  
-
-    
 
   );
 }
