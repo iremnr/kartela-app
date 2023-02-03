@@ -5,6 +5,7 @@ import Bootstrap from './Bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './components/Login';
 import User_menu from './components/user_menu';
+import SessionList from './components/SessionList';
 import Yonetici_menu from './components/yonetici_menu';
 import AddRoom from './components/AddRoom';
 import AddSession from './components/AddSession';
@@ -23,6 +24,7 @@ function App() {
           <Route path="/seans-ekle" element={<AddSession />} />
           <Route path="/oda-ekle" element={<AddRoom />} />
           <Route path="/seanslarim" element={<Sessions/>} />
+          <Route path="/seans-liste" element={<SessionList/>} />
        </Routes>
       
 
