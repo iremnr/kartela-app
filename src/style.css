@@ -1,5 +1,8 @@
 .app {
-    background-color: #369CC0;   
+    background-color: #369CC0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
 .row-out {
@@ -40,15 +43,18 @@
     color: #000000;
     margin-bottom: 80px;
     padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .button {
     display: flex;
-    
     justify-content: center;
     align-items: center;
     
-    width: 365px;
+    width: 0%;
     height: 48px;
 
     background: #39AAD2;
@@ -77,8 +83,8 @@
 
 .Card-1 {
   
-    width: 647px;
-    height: 409px;
+    width: 80%;
+    height: 88%;
     background: #81E5D3;
     border-radius: 41px;
     justify-content: center;
@@ -90,8 +96,8 @@
   
     background: #369CC0;
     border-radius: 41px;
-    width: 647px;
-    height: 191px;
+    width: 80%;
+    height: 40%;
 
 
 }
@@ -250,5 +256,192 @@
         color: #81E5D3;
     }
 }
+
+
+
+.seans-list-title {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 59px;
+
+    color: #369CC0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.dropdavn{
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 1px 5px 8px;
+
+    position: absolute;
+    width: 206px;
+    height: 29px;
+    left: 681px;
+    top: 240px;
+
+    background: #F0EDED;
+    border-radius: 6px;
+}
+
+.th-items {
+    padding: 5px;
+    gap: 2px;
+    background: #F8F8F8;
+    
+    border-top: 1px solid #D0D0CE;
+    height: 64px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.005em;
+    color: #6A6A65;
+    font-family: 'Montserrat';
+}
+
+.th-items-first {
+    padding: 5px;
+    gap: 2px;
+    background: #F8F8F8;
+    
+    border-left: 1px solid #D0D0CE;
+    height: 64px;
+    border-top: 1px solid #D0D0CE;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.005em;
+    color: #6A6A65;
+    font-family: 'Montserrat';
+}
+
+.th-items-end {
+   
+    padding: 5px;
+    gap: 2px;
+    background: #F8F8F8;
+    border-right: 1px solid #D0D0CE;
+    height: 64px;
+    border-top: 1px solid #D0D0CE;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.005em;
+    color: #6A6A65;
+    font-family: 'Montserrat';
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.tr-items {
+    box-sizing: border-box;
+    align-items: center;
+    padding: 5px;
+    gap: 22px;  
+    background: #FFFFFF;
+    border-bottom: 1px solid #D0D0CE;
+    order: 2;
+    flex-grow: 0;
+    height: 64px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.005em;
+    color: #6A6A65;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.tr-items-first {
+    box-sizing: border-box;
+   
+    align-items: center;
+    padding: 5px;
+    gap: 22px;  
+    background: #FFFFFF;
+    border-bottom: 1px solid #D0D0CE;
+    order: 2;
+    flex-grow: 0;
+    border-left: 1px solid #D0D0CE;
+    height: 64px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.005em;
+    color: #6A6A65;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.tr-items-end {
+    box-sizing: border-box;
+  
+    align-items: center;
+    padding: 5px;
+    gap: 22px;  
+    background: #FFFFFF;
+    border-bottom: 1px solid #D0D0CE;
+    order: 2;
+    flex-grow: 0;
+    border-right: 1px solid #D0D0CE;
+    height: 64px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.005em;
+    color: #6A6A65;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.dropdavn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    background: #F0EDED;
+    border-radius: 6px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px -26px;
+    position: unset;
+}
+
+.seanslist-logo {
+    width: 344px;
+    height: 189px;
+}
+
+
+
+
 
 

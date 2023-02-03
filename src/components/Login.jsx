@@ -2,15 +2,21 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import login_img from '../assets/login_page.png';
 import kartela_logo from '../assets/logo_kartela.png';
+import Form from 'react-bootstrap/Form';
+
+
 
 
 function Login() {
+
+    document.title = "GİRİŞ";
+
     return (
         
         <Container fluid className="app">
             <Row className="row-out">
                 <Row className="row-body">
-                    <Col sm={6}>
+                    <Col sm={6} className="login-part">
 
                         <div className="row-1">
                             <h2 className="giris-control">GİRİŞ</h2>
@@ -18,22 +24,24 @@ function Login() {
                         
                         <div className="row-1">
                             <form className="form">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Kullanıcı Adı"/>
-                                    <label for="floatingInput">Kullanıcı Adı</label>
-                                </div>
+                                <Form.Group className="mb-3" controlId="formGroupEmail">
+                                    <Form.Control type="email" placeholder="Kullanıcı Adı" />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="formGroupPassword">
+                                    <Form.Control type="password" placeholder="Şifre" />
+                                </Form.Group>
+                          
+                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="Beni Hatırla" />
+                                </Form.Group>
 
-                                <div class="form-floating mb-3">
-                                    <input type="password" class="form-control" id="floatingInput" placeholder="Şifre"/>
-                                    <label for="floatingInput">Şifre</label>
-                                </div>
-
+                                <div className="row">
+                                    <button type="submit" className="button">GİRİŞ</button>
+                                </div> 
                             </form>
                         </div>
 
-                        <div className="">
-                            <button className="button">GİRİŞ</button>
-                        </div> 
+
 
                         <div className="kartela-logo">
                             <img className="kartela-logo" src={kartela_logo} alt="" />
