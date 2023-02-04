@@ -45,7 +45,7 @@
 }
 
 .login-user-name-text {
-    width: 60%;
+    width: 80%;
     height: auto;
     border-bottom: 1px solid #BCBCBC;
     align-self: stretch;
@@ -58,7 +58,7 @@
 }
 
 .login-password-text {
-    width: 60%;
+    width: 80%;
     height: auto;
     border-bottom: 1px solid #BCBCBC;
     align-self: stretch;
@@ -615,7 +615,7 @@
     align-items: center;
     padding: 12px 80px;
     gap: 10px;
-    width: 60%;
+    width: 80%;
     height: 48px;
     background: #39AAD2;
     border-radius: 8px;
