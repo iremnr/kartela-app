@@ -3,8 +3,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import login_img from '../assets/login_page.png';
 import kartela_logo from '../assets/logo_kartela.png';
 import Form from 'react-bootstrap/Form';
-
-
+import "@fontsource/roboto";
+import "@fontsource/rubik";
 
 
 function Login() {
@@ -13,53 +13,41 @@ function Login() {
 
     return (
         
-        <Container fluid className="app">
-            <Row className="row-out">
-                <Row className="row-body">
-                    <Col sm={6} className="login-part">
+        <div className='container-fluid bg-kartela p-4'>
+            <div className="conteiner bg-white rounded-2xl  px-2">           
+                <div className="row px-1">
+                    <div className="col-md-6 login-left">
+                        <div className="col">
 
-                        <div className="row-1">
                             <h2 className="giris-control">GİRİŞ</h2>
-                        </div>
-                        
-                        <div className="row-1">
-                            <form className="form">
-                                <Form.Group className="mb-3" controlId="formGroupEmail">
-                                    <Form.Control type="email" placeholder="Kullanıcı Adı" />
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="formGroupPassword">
-                                    <Form.Control type="password" placeholder="Şifre" />
-                                </Form.Group>
-                          
-                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                    <Form.Check type="checkbox" label="Beni Hatırla" />
-                                </Form.Group>
 
-                                <div className="row">
-                                    <button type="submit" className="button">GİRİŞ</button>
-                                </div> 
-                            </form>
+                            <label className="login-user-name"></label>
+                            <input type="text" className="login-user-name-text mb-3" placeholder="Kullanıcı Adı"/>
+
+                            <label className="login-password"></label>
+                            <input type="password" className="login-password-text mb-3" placeholder="Şifre"/>
+
+                            <label class="checkbox-container mb-5">Beni Hatırla
+                                <input type="checkbox"/>
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <button class="button-login">GİRİŞ</button><br></br>
+
+                            <img className="kartela-logo-login" src={kartela_logo} alt="" />
+
                         </div>
 
+                    </div>
 
+                    <div className="col-md-6 p-0">
+                        <img className="login-img p-0" src={login_img} alt="" />
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
 
-                        <div className="kartela-logo">
-                            <img className="kartela-logo" src={kartela_logo} alt="" />
-                        </div> 
-
-                    </Col>
-
-                    <Col sm={6} className="login-img" >
-                        <img className="login-img" src={login_img} alt="" />
-                    </Col>
-                </Row>
-            </Row>
-
-        </Container>
-
-
-
-    
     )
 }
 

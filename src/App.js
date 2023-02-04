@@ -11,6 +11,8 @@ import AddRoom from './components/AddRoom';
 import AddSession from './components/AddSession';
 import { Routes, Route, Link, NavLink } from 'react-router-dom';
 import Sessions from './components/Sessions';
+import Clients from './components/Clients'
+import AddTherapist from './components/AddTherapist'
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
           <Route path="/oda-ekle" element={<AddRoom />} />
           <Route path="/seanslarim" element={<Sessions/>} />
           <Route path="/seans-liste" element={<SessionList/>} />
+          <Route path="/danisanlarim" element={<Clients/>} />
+          <Route path="/terapist-ekle" element={<AddTherapist/>} />
        </Routes>
       
 

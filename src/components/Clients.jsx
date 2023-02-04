@@ -18,10 +18,9 @@ import "@fontsource/montserrat";
 
 
 
+function Clients() {
 
-function SessionList() {
-
-    document.title = "Seans Liste";
+    document.title = "Danışanlarım";
 
     return (
 
@@ -33,7 +32,7 @@ function SessionList() {
                         <BsArrowLeftCircle size={50} color="#369CC0"/>
                     </div>
                     <div className="col-sm-8 flex justify-center">
-                        <h2 className="seans-list-title">GENEL SEANS LİSTESİ</h2>
+                        <h2 className="seans-list-title">DANIŞANLARIM</h2>
                     </div>
                     <div className="col-sm-2 p-0" >
                         <img className="seanslist-logo" src={kartela_logo} alt="" />
@@ -77,7 +76,7 @@ function SessionList() {
                     </div>
                     <div className="col-sm-2 p-0">
                         <select className="dropdavn">
-                            <option selected disabled>SIRALAMA</option>
+                            <option selected disabled>FİLTRE</option>
                             <option>2023</option>
                             <option>2022</option>
                             <option>2021</option>
@@ -252,4 +251,4 @@ function SessionList() {
     )
 }
 
-export default SessionList
+export default Clients

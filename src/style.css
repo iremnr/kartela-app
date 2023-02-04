@@ -6,7 +6,6 @@
 }
 
 .row-out {
-    padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,50 +23,137 @@
 .login-img {
     
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
     display:block;
+    height: 100%;
 }
 
-@media only screen and (max-width: 712px) {
+@media only screen and (max-width: 768px) {
     .login-img {
       display:none;
     }
 }
 
 .giris-control {
-    
+    font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
+    line-height: 43px;
     color: #000000;
-    margin-bottom: 80px;
-    padding-top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    margin-bottom: 120px;
 }
 
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    width: 0%;
-    height: 48px;
-
-    background: #39AAD2;
-    border-radius: 8px;
-
-    font-weight: 700;
+.login-user-name-text {
+    width: 60%;
+    height: auto;
+    border-bottom: 1px solid #BCBCBC;
+    align-self: stretch;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
     font-size: 16px;
-    color: #FFFFFF;
+    line-height: 19px;
+    color: #BCBCBC;
 }
 
-.kartela-logo {
-    width: 344px;
-    height: 189px;
+.login-password-text {
+    width: 60%;
+    height: auto;
+    border-bottom: 1px solid #BCBCBC;
+    align-self: stretch;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #BCBCBC;
+}
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #616161;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: #FFFFFF;
+    border: 1px solid #D0D0CE;
+    border-radius: 4px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-container input:checked ~ .checkmark {
+      width: 16px;
+      height: 16px;
+      background: #39AAD2;
+      border: 1px solid #D0D0CE;
+      border-radius: 4px;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox-container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+.kartela-logo-login {
+    box-sizing: border-box;
+    width: 60%;
+    height: auto;
 }
 
 .row-1 {
@@ -81,25 +167,26 @@
     padding: 30px;
 }
 
-.Card-1 {
-  
-    width: 80%;
-    height: 88%;
+.card-1 {
+    width: 100%;
     background: #81E5D3;
     border-radius: 41px;
     justify-content: center;
     align-items: center;
     display: flex;
+    height: 100%;
+    padding: 120px;
 }
 
-.Card-2 {
-  
+.card-2 {
     background: #369CC0;
     border-radius: 41px;
-    width: 80%;
-    height: 40%;
-
-
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
 }
 
 .card-yazi-1 {
@@ -107,7 +194,6 @@
     font-weight: 700;
     font-size: 50px;
     line-height: 59px;
-
     color: #369CC0;
     justify-content: center;
     align-items: center;
@@ -120,72 +206,79 @@
     font-weight: 700;
     font-size: 50px;
     line-height: 59px;
-
     color: #81E5D3;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-@media only screen and (max-width: 712px) {
-    .Card-1 {
-        width: 338px;
-        height: 100px;
-        margin-left: 26px;
-        margin-left: 26px;
+@media only screen and (max-width: 772px) {
+    .card-1 {
         background: #81E5D3;
-        border-radius: 41px;    
+        border-radius: 41px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
     }
 }
 
-@media only screen and (max-width: 712px) {
+@media only screen and (max-width: 772px) {
     .card-yazi-1 {
         font-style: normal;
         font-weight: 700;
         font-size: 25px;
         line-height: 30px;
-        
         color: #369CC0;
     }
 }
 
-@media only screen and (max-width: 712px) {
-    .Card-2 {
-        width: 338px;
-        height: 100px;
-        margin-left: 26px;
-        margin-left: 26px;
+@media only screen and (max-width: 772px) {
+    .card-2 {
         background: #369CC0;
         border-radius: 41px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
     }
 }
 
-@media only screen and (max-width: 712px) {
+@media only screen and (max-width: 772px) {
     .card-yazi-2 {
         font-style: normal;
         font-weight: 700;
         font-size: 25px;
         line-height: 30px;
-        
         color: #81E5D3;
     }
 }
 
 .y-card-1 {
-  
-    width: 647px;
-    height: 195px;
     background: #81E5D3;
     border-radius: 41px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    
 }
 
 .y-card-2 {
-  
-    width: 647px;
-    height: 191px;
     background: #369CC0;
     border-radius: 41px;
-
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
 }
 
 .y-card-yazi-1 {
@@ -193,12 +286,10 @@
     font-weight: 700;
     font-size: 50px;
     line-height: 59px;
-    
     color: #369CC0;
     justify-content: center;
     align-items: center;
     display: flex;
-    
 }
 
 .y-card-yazi-2 {
@@ -206,25 +297,26 @@
     font-weight: 700;
     font-size: 50px;
     line-height: 59px;
-    
     color: #81E5D3;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-@media only screen and (max-width: 712px) {
+@media only screen and (max-width: 772px) {
     .y-card-1 {
-        width: 338px;
-        height: 100px;
-        margin-left: 26px;
-        margin-left: 26px;
         background: #81E5D3;
-        border-radius: 41px;    
+        border-radius: 41px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
     }
 }
 
-@media only screen and (max-width: 712px) {
+@media only screen and (max-width: 772px) {
     .y-card-yazi-1 {
         font-style: normal;
         font-weight: 700;
@@ -235,29 +327,28 @@
     }
 }
 
-@media only screen and (max-width: 712px) {
+@media only screen and (max-width: 772px) {
     .y-card-2 {
-        width: 338px;
-        height: 100px;
-        margin-left: 26px;
-        margin-left: 26px;
         background: #369CC0;
         border-radius: 41px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
     }
 }
 
-@media only screen and (max-width: 712px) {
+@media only screen and (max-width: 772px) {
     .y-card-yazi-2 {
         font-style: normal;
         font-weight: 700;
         font-size: 25px;
         line-height: 30px;
-        
         color: #81E5D3;
     }
 }
-
-
 
 .seans-list-title {
 
@@ -280,7 +371,7 @@
 
     position: absolute;
     width: 206px;
-    height: 29px;
+    height: auto;
     left: 681px;
     top: 240px;
 
@@ -419,6 +510,7 @@
 
 .dropdavn {
     display: flex;
+    width: 100%;
     flex-direction: row;
     align-items: center;
     height: auto;
@@ -436,9 +528,134 @@
 }
 
 .seanslist-logo {
-    width: 344px;
-    height: 189px;
+    width: 100%;
+    height: auto;
 }
+
+.terapist-form {
+    width: 100%;
+    height: 45.42px;
+    border: 1px solid #9C89B8;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+
+    color: #49444C;
+}
+
+.terapist-form-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #49444C;
+}
+
+.terapist-button {
+    width: 100%;
+    height: 60.56px;
+    left: 100px;
+    top: 872px;
+    background: #9C89B8;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1110px) {
+    .terapist-responsive {
+      display:none;
+    }
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 6px 5px 5px;
+    width: auto;
+    height: auto;
+    background: #F0EDED;
+    border-radius: 6px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    float: right;
+}
+
+.search-bar-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 6px 5px 5px;
+    height: auto;
+    width: auto;
+    background: #F0EDED;
+    border-radius: 6px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+
+   
+}
+
+.button-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 80px;
+    gap: 10px;
+    width: 60%;
+    height: 48px;
+    background: #39AAD2;
+    border-radius: 8px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.login-left {
+    display: flex;
+    justify-items:center;
+    align-items: center;
+}
+
+.menu-kartela-logo {
+    width: auto;
+    height: auto;
+}
+
+
+
+
 
 
 
