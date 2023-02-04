@@ -12,6 +12,7 @@ import AddSession from './components/AddSession';
 import { Routes, Route, Link, NavLink } from 'react-router-dom';
 import Sessions from './components/Sessions';
 import CreateAct from './components/CreateAct';
+import Calendar from './components/Calendar';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/seanslarim" element={<Sessions/>} />
           <Route path="/seans-liste" element={<SessionList/>} />
           <Route path="/etkinlik-olustur" element={<CreateAct/>} />
+          <Route path="/takvim" element={<Calendar/>} />
        </Routes>
       
 
