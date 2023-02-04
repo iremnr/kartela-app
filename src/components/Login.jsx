@@ -16,8 +16,8 @@ function Login() {
         <div className='container-fluid bg-kartela p-4'>
             <div className="conteiner bg-white rounded-2xl  px-2">           
                 <div className="row px-1">
-                    <div className="col-md-6 login-left">
-                        <div className="col">
+                    <div className="col-md-6 conteiner login-left">
+                        <div className="">
 
                             <h2 className="giris-control">GİRİŞ</h2>
 

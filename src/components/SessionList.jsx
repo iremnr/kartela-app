@@ -40,8 +40,8 @@ function SessionList() {
                     </div>
                 </div>
 
-                <div className="row px-14 mb-3">
-                    <div className="col-sm-3 p-0"></div>
+                <div className="row px-14 mb-3 flex justify-end">
+                    
                     <div className="col-sm-2 p-0">
                         <select className="dropdavn">
                             <option selected disabled>PSİKOLOG</option>
@@ -118,16 +118,20 @@ function SessionList() {
                         <td className="tr-items">15 : 00</td>
                         <td className="tr-items">100</td>
                         <td className="tr-items">                                
-                            <label class="checkbox-container flex justif-center">
-                                <input type="checkbox"/>
-                                <span class="checkmark"></span>
-                            </label>
+                            <div className="container flex justify-center items-center">
+                                <label class="checkbox-container">
+                                    <input type="checkbox"/>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </td>
                         <td className="tr-items">                                
-                            <label class="checkbox-container flex justif-center">
-                                <input type="checkbox"/>
-                                <span class="checkmark"></span>
-                            </label>
+                            <div className="container flex justify-center items-center">
+                                <label class="checkbox-container">
+                                    <input type="checkbox"/>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </td>
                         <td className="tr-items-end">
                             <div className="row">
@@ -152,16 +156,20 @@ function SessionList() {
                         <td className="tr-items">15 : 00</td>
                         <td className="tr-items">100</td>
                         <td className="tr-items">                                
-                            <label class="checkbox-container flex justif-center">
-                                <input type="checkbox"/>
-                                <span class="checkmark"></span>
-                            </label>
+                            <div className="container flex justify-center items-center">
+                                <label class="checkbox-container">
+                                    <input type="checkbox"/>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </td>
                         <td className="tr-items">                                
-                            <label class="checkbox-container flex justif-center">
-                                <input type="checkbox"/>
-                                <span class="checkmark"></span>
-                            </label>
+                            <div className="container flex justify-center items-center">
+                                <label class="checkbox-container">
+                                    <input type="checkbox"/>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </td>
                         <td className="tr-items-end">
                             <div className="row">
@@ -186,16 +194,20 @@ function SessionList() {
                         <td className="tr-items">15 : 00</td>
                         <td className="tr-items">100</td>
                         <td className="tr-items">                                
-                            <label class="checkbox-container flex justif-center">
-                                <input type="checkbox"/>
-                                <span class="checkmark"></span>
-                            </label>
+                            <div className="container flex justify-center items-center">
+                                <label class="checkbox-container">
+                                    <input type="checkbox"/>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </td>
                         <td className="tr-items">                                
-                            <label class="checkbox-container flex justif-center p-0 items-center">
-                                <input type="checkbox"/>
-                                <span class="checkmark"></span>
-                            </label>
+                            <div className="container flex justify-center items-center">
+                                <label class="checkbox-container">
+                                    <input type="checkbox"/>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </td>
                         <td className="tr-items-end">
                             <div className="row">
@@ -220,16 +232,20 @@ function SessionList() {
                         <td className="tr-items">15 : 00</td>
                         <td className="tr-items">100</td>
                         <td className="tr-items">                                
-                            <label class="checkbox-container flex justif-center">
-                                <input className="" type="checkbox"/>
-                                <span class="checkmark"></span>
-                            </label>
+                            <div className="container flex justify-center items-center">
+                                <label class="checkbox-container">
+                                    <input type="checkbox"/>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </td>
                         <td className="tr-items">                                
-                            <label class="checkbox-container flex justif-center">
-                                <input type="checkbox"/>
-                                <span class="checkmark"></span>
-                            </label>
+                            <div className="container flex justify-center items-center">
+                                <label class="checkbox-container">
+                                    <input type="checkbox"/>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </td>
                         <td className="tr-items-end">
                             <div className="row">

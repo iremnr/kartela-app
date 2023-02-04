@@ -29,6 +29,8 @@ function App() {
           <Route path="/oda-ekle" element={<AddRoom />} />
           <Route path="/seanslarim" element={<Sessions/>} />
           <Route path="/seans-liste" element={<SessionList/>} />
+          <Route path="/terapist-ekle" element={<AddTherapist/>} />
+          <Route path="/danisanlarim" element={<Clients/>} />
        </Routes>
       
 

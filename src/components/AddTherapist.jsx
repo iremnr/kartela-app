@@ -92,157 +92,173 @@ function AddTherapist() {
                     
                     <div className="row px-10">
                         <table>
-                            <tr>
-                                <th className="th-items-first">TC</th>
-                                <th className="th-items">DANIŞAN<br></br>İSİM/SOYİSİM</th>
-                                <th className="th-items">PSİKOLOG</th>
-                                <th className="th-items">ALAN</th>
-                                <th className="th-items">YAŞ</th>
-                                <th className="th-items">CİNSİYET</th>
-                                <th className="th-items">ODA</th>
-                                <th className="th-items">TARİH</th>
-                                <th className="th-items">SAAT</th>
-                                <th className="th-items">ÜCRET</th>
-                                <th className="th-items">ÖDENDİ/<br></br>ÖDENMEDİ</th>
-                                <th className="th-items">SEANS<br></br>YAPILDI</th>
-                                <th className="th-items-end"><BiPlusCircle size={40} color="#369CC0"/></th>
-                            </tr>
-                            <tr>
-                                <td className="tr-items-first">00000000000</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">05/01/2023</td>
-                                <td className="tr-items">15 : 00</td>
-                                <td className="tr-items">100</td>
-                                <td className="tr-items">                                
-                                    <label class="checkbox-container flex justif-center">
+                        <tr>
+                            <th className="th-items-first">TC</th>
+                            <th className="th-items">DANIŞAN<br></br>İSİM/SOYİSİM</th>
+                            <th className="th-items">PSİKOLOG</th>
+                            <th className="th-items">ALAN</th>
+                            <th className="th-items">YAŞ</th>
+                            <th className="th-items">CİNSİYET</th>
+                            <th className="th-items">ODA</th>
+                            <th className="th-items">TARİH</th>
+                            <th className="th-items">SAAT</th>
+                            <th className="th-items">ÜCRET</th>
+                            <th className="th-items">ÖDENDİ/<br></br>ÖDENMEDİ</th>
+                            <th className="th-items">SEANS<br></br>YAPILDI</th>
+                            <th className="th-items-end"><BiPlusCircle size={40} color="#369CC0"/></th>
+                        </tr>
+                        <tr>
+                            <td className="tr-items-first">00000000000</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">05/01/2023</td>
+                            <td className="tr-items">15 : 00</td>
+                            <td className="tr-items">100</td>
+                            <td className="tr-items">                                
+                                <div className="container flex justify-center items-center">
+                                    <label class="checkbox-container">
                                         <input type="checkbox"/>
                                         <span class="checkmark"></span>
                                     </label>
-                                </td>
-                                <td className="tr-items">                                
-                                    <label class="checkbox-container flex justif-center">
+                                </div>
+                            </td>
+                            <td className="tr-items">                                
+                                <div className="container flex justify-center items-center">
+                                    <label class="checkbox-container">
                                         <input type="checkbox"/>
                                         <span class="checkmark"></span>
                                     </label>
-                                </td>
-                                <td className="tr-items-end">
-                                    <div className="row">
-                                        <div className="col">
-                                            <FiEdit2 size={18} color="#6A6A65"/>
-                                        </div>
-                                        <div className="col">
-                                            <FiTrash size={18} color="#6A6A65"/>
-                                        </div>
+                                </div>
+                            </td>
+                            <td className="tr-items-end">
+                                <div className="row">
+                                    <div className="col">
+                                        <FiEdit2 size={18} color="#6A6A65"/>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="tr-items-first">00000000000</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">05/01/2023</td>
-                                <td className="tr-items">15 : 00</td>
-                                <td className="tr-items">100</td>
-                                <td className="tr-items">                                
-                                    <label class="checkbox-container flex justif-center">
-                                        <input type="checkbox"/>
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </td>
-                                <td className="tr-items">                                
-                                    <label class="checkbox-container flex justif-center">
-                                        <input type="checkbox"/>
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </td>
-                                <td className="tr-items-end">
-                                    <div className="row">
-                                        <div className="col">
-                                            <FiEdit2 size={18} color="#6A6A65"/>
-                                        </div>
-                                        <div className="col">
-                                            <FiTrash size={18} color="#6A6A65"/>
-                                        </div>
+                                    <div className="col">
+                                        <FiTrash size={18} color="#6A6A65"/>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="tr-items-first">00000000000</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">05/01/2023</td>
-                                <td className="tr-items">15 : 00</td>
-                                <td className="tr-items">100</td>
-                                <td className="tr-items">                                
-                                    <label class="checkbox-container flex justif-center">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className="tr-items-first">00000000000</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">05/01/2023</td>
+                            <td className="tr-items">15 : 00</td>
+                            <td className="tr-items">100</td>
+                            <td className="tr-items">                                
+                                <div className="container flex justify-center items-center">
+                                    <label class="checkbox-container">
                                         <input type="checkbox"/>
                                         <span class="checkmark"></span>
                                     </label>
-                                </td>
-                                <td className="tr-items">                                
-                                    <label class="checkbox-container flex justif-center p-0 items-center">
+                                </div>
+                            </td>
+                            <td className="tr-items">                                
+                                <div className="container flex justify-center items-center">
+                                    <label class="checkbox-container">
                                         <input type="checkbox"/>
                                         <span class="checkmark"></span>
                                     </label>
-                                </td>
-                                <td className="tr-items-end">
-                                    <div className="row">
-                                        <div className="col">
-                                            <FiEdit2 size={18} color="#6A6A65"/>
-                                        </div>
-                                        <div className="col">
-                                            <FiTrash size={18} color="#6A6A65"/>
-                                        </div>
+                                </div>
+                            </td>
+                            <td className="tr-items-end">
+                                <div className="row">
+                                    <div className="col">
+                                        <FiEdit2 size={18} color="#6A6A65"/>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="tr-items-first">00000000000</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">Folder 1</td>
-                                <td className="tr-items">05/01/2023</td>
-                                <td className="tr-items">15 : 00</td>
-                                <td className="tr-items">100</td>
-                                <td className="tr-items">                                
-                                    <label class="checkbox-container flex justif-center">
-                                        <input className="" type="checkbox"/>
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </td>
-                                <td className="tr-items">                                
-                                    <label class="checkbox-container flex justif-center">
+                                    <div className="col">
+                                        <FiTrash size={18} color="#6A6A65"/>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className="tr-items-first">00000000000</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">05/01/2023</td>
+                            <td className="tr-items">15 : 00</td>
+                            <td className="tr-items">100</td>
+                            <td className="tr-items">                                
+                                <div className="container flex justify-center items-center">
+                                    <label class="checkbox-container">
                                         <input type="checkbox"/>
                                         <span class="checkmark"></span>
                                     </label>
-                                </td>
-                                <td className="tr-items-end">
-                                    <div className="row">
-                                        <div className="col">
-                                            <FiEdit2 size={18} color="#6A6A65"/>
-                                        </div>
-                                        <div className="col">
-                                            <FiTrash size={18} color="#6A6A65"/>
-                                        </div>
+                                </div>
+                            </td>
+                            <td className="tr-items">                                
+                                <div className="container flex justify-center items-center">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td className="tr-items-end">
+                                <div className="row">
+                                    <div className="col">
+                                        <FiEdit2 size={18} color="#6A6A65"/>
                                     </div>
-                                </td>
-                            </tr>
+                                    <div className="col">
+                                        <FiTrash size={18} color="#6A6A65"/>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className="tr-items-first">00000000000</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">Folder 1</td>
+                            <td className="tr-items">05/01/2023</td>
+                            <td className="tr-items">15 : 00</td>
+                            <td className="tr-items">100</td>
+                            <td className="tr-items">                                
+                                <div className="container flex justify-center items-center">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td className="tr-items">                                
+                                <div className="container flex justify-center items-center">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox"/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td className="tr-items-end">
+                                <div className="row">
+                                    <div className="col">
+                                        <FiEdit2 size={18} color="#6A6A65"/>
+                                    </div>
+                                    <div className="col">
+                                        <FiTrash size={18} color="#6A6A65"/>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
                         </table>
 
                     </div>
