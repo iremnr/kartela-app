@@ -39,9 +39,9 @@ function Clients() {
                     </div>
                 </div>
 
-                <div className="row px-14 mb-3">
-                    <div className="col-sm-3 p-0"></div>
-                    <div className="col-sm-2 p-0">
+                <div className="row px-10 mb-3 flex justify-end">
+                    
+                    <div className="col-sm-2 p-0 mx-1">
                         <select className="dropdavn">
                             <option selected disabled>PSİKOLOG</option>
                             <option>Psikolog 1</option>
@@ -50,7 +50,7 @@ function Clients() {
                         </select>
                     </div>
 
-                    <div className="col-sm-1 p-0">
+                    <div className="col-sm-1 p-0 mx-1">
                         <select className="dropdavn">
                             <option selected disabled>GÜN</option>
                             <option>1</option>
@@ -58,7 +58,7 @@ function Clients() {
                             <option>3</option>
                         </select>
                     </div>
-                    <div className="col-sm-1 p-0">
+                    <div className="col-sm-1 p-0 mx-1">
                         <select className="dropdavn">
                             <option selected disabled>AY</option>
                             <option>OCAK</option>
@@ -66,7 +66,7 @@ function Clients() {
                             <option>MART</option>
                         </select>
                     </div>
-                    <div className="col-sm-1 p-0">
+                    <div className="col-sm-1 p-0 mx-1">
                         <select className="dropdavn">
                             <option selected disabled>YIL</option>
                             <option>2023</option>
@@ -74,7 +74,7 @@ function Clients() {
                             <option>2021</option>
                         </select>
                     </div>
-                    <div className="col-sm-2 p-0">
+                    <div className="col-sm-2 p-0 mx-1">
                         <select className="dropdavn">
                             <option selected disabled>FİLTRE</option>
                             <option>2023</option>
@@ -82,8 +82,8 @@ function Clients() {
                             <option>2021</option>
                         </select>
                     </div>
-                    <div className="col-sm-2 p-0 search-bar">
-                        <div className="px-2"><VscSearch size={16} color="#000000"/></div>
+                    <div className="col-sm-2 search-bar p-0">
+                        <div className="px-3"><VscSearch size={20} color="#000000"/></div>
                         <input type="text" className="search-bar-text p-0" placeholder="ARA.."/>
                     </div>
                 </div>

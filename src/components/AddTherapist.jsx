@@ -41,55 +41,7 @@ function AddTherapist() {
                 </div>
 
                 <div className="terapist-responsive">
-                    <div className="row px-14 mb-3">
-                        <div className="col-sm-3 p-0"></div>
-                        <div className="col-sm-2 p-0">
-                            <select className="dropdavn">
-                                <option selected disabled>PSİKOLOG</option>
-                                <option>Psikolog 1</option>
-                                <option>Psikolog 2</option>
-                                <option>Psikolog 3</option>
-                            </select>
-                        </div>
-
-                        <div className="col-sm-1 p-0">
-                            <select className="dropdavn">
-                                <option selected disabled>GÜN</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-                        <div className="col-sm-1 p-0">
-                            <select className="dropdavn">
-                                <option selected disabled>AY</option>
-                                <option>OCAK</option>
-                                <option>ŞUBAT</option>
-                                <option>MART</option>
-                            </select>
-                        </div>
-                        <div className="col-sm-1 p-0">
-                            <select className="dropdavn">
-                                <option selected disabled>YIL</option>
-                                <option>2023</option>
-                                <option>2022</option>
-                                <option>2021</option>
-                            </select>
-                        </div>
-                        <div className="col-sm-2 p-0">
-                            <select className="dropdavn">
-                                <option selected disabled>FİLTRE</option>
-                                <option>2023</option>
-                                <option>2022</option>
-                                <option>2021</option>
-                            </select>
-                        </div>
-                        <div className="col-sm-2 p-0 search-bar">
-                            <div className="px-2"><VscSearch size={16} color="#000000"/></div>
-                            <input type="text" className="search-bar-text p-0" placeholder="ARA.."/>
-                        </div>
-                    </div>
-                    
+                                        
                     <div className="row px-10">
                         <table>
                         <tr>
