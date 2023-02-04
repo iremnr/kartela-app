@@ -11,7 +11,7 @@ import AddRoom from './components/AddRoom';
 import AddSession from './components/AddSession';
 import { Routes, Route, Link, NavLink } from 'react-router-dom';
 import Sessions from './components/Sessions';
-
+import CreateAct from './components/CreateAct';
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
           <Route path="/oda-ekle" element={<AddRoom />} />
           <Route path="/seanslarim" element={<Sessions/>} />
           <Route path="/seans-liste" element={<SessionList/>} />
+          <Route path="/etkinlik-olustur" element={<CreateAct/>} />
        </Routes>
       
 
