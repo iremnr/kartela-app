@@ -9,7 +9,7 @@ import { BsArrowLeftCircle } from "react-icons/bs";
 function User_menu() {
     return (
         <div className='container-fluid bg-kartela p-4'>
-            <div className="conteiner bg-white rounded-2xl p-10">
+            <div className="bg-white rounded-2xl p-10">
                                 
                 <div className="row">
                     <div className="col-sm-4 vector" >
@@ -47,7 +47,7 @@ function User_menu() {
                     </div>
 
                 </div>
-                
+
             </div>
         </div>
     )

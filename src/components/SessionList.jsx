@@ -26,7 +26,7 @@ function SessionList() {
     return (
 
         <div className='container-fluid bg-kartela p-4'>
-            <div className="conteiner bg-white rounded-2xl h-screen p-10">
+            <div className="bg-white rounded-2xl h-screen p-10">
                                 
                 <div className="row">
                     <div className="col-sm-2 vector" >
