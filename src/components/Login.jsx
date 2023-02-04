@@ -17,7 +17,7 @@ function Login() {
             <div className="bg-white rounded-2xl px-2">           
                 <div className="row px-1">
                     <div className="col-md-6 container login-left">
-                        <div className="">
+                        <div className="p-12">
 
                             <h2 className="giris-control">GİRİŞ</h2>
 
