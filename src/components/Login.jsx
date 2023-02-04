@@ -9,7 +9,7 @@ import "@fontsource/rubik";
 
 function Login() {
 
-    document.title = "GİRİŞ";
+    document.title = "Giriş";
 
     return (
         

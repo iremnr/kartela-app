@@ -7,6 +7,9 @@ import { BsArrowLeftCircle } from "react-icons/bs";
 
 
 function User_menu() {
+
+    document.title = "Menü";
+
     return (
         <div className='container-fluid bg-kartela p-4'>
             <div className="bg-white rounded-2xl p-10">

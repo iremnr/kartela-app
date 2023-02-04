@@ -5,6 +5,9 @@ import kartela_logo from '../assets/logo_kartela.png';
 import { BsArrowLeftCircle } from "react-icons/bs";
 
 function Yonetici_menu() {
+
+    document.title = "Yönetici Menü";
+
     return (
         <div className='container-fluid bg-kartela p-4'>
             <div className="bg-white rounded-2xl p-10">
