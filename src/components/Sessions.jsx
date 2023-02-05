@@ -9,9 +9,8 @@ import interactionPlugin from "@fullcalendar/interaction";
 
 const rowColors = ["color1", "color2", "color3", "color4"];
 
-
 const MyRows = () => {
-  const rows = [1, 2, 3, 4, 5, 6,7];
+  const rows = [1, 2, 3, 4];
 
   return (
     <>
@@ -28,12 +27,12 @@ const MyRows = () => {
   );
 };
 const CheckBoxes = () => {
-  const rows = [1, 2, 3, 4, 5, 6,7];
+  const rows = [1, 2, 3, 4];
 
   return (
     <>
       {rows.map((row, index) => (
-        <Col className={`check-one ${rowColors[index % rowColors.length]}`}
+        <Col className={`check-box-one ${rowColors[index % rowColors.length]}`}
           key={index}>
          <Col className="check-one"><input type="checkbox"></input></Col>
         </Col>
@@ -53,7 +52,8 @@ const events = [
 
 function Sessions() {
   return (
-    <Container fluid>
+    <Container fluid className="page-container">
+    <Container fluid xs={6} sm={4} md={4} lg={4} xl={4} className="inner-container">
       <Row className="page-header">
         <Col className="prev-page">
           {" "}
@@ -84,7 +84,8 @@ function Sessions() {
             dateClick={(e) => console.log(e.dateStr)}
             eventClick={(e) => console.log(e.event.id)}
           />
-        </Row>
+        </Row>  </Row>
+          <Row className="deneme">
           <Col className="session-col">
           <Row className="sessions-day">BUGÜN</Row>
          <Col>
@@ -94,7 +95,8 @@ function Sessions() {
          </Row>
          </Col>
           </Col>
-      </Row>
+    </Row>
+    </Container>
     </Container>
   );
 }

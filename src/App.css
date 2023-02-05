@@ -432,10 +432,15 @@ margin-top: 5px;
 .patient-name{
 text-indent: 3px;
 }
-.check-one{
-background-color: transparent;
-margin-bottom: 25px;
+.check-box-one{
+  background-color: transparent; 
+  margin-bottom: 25px;
 }
+
+.check-one{
+
+}
+
 
 [type=checkbox] {
   width: 2.5rem;
@@ -447,7 +452,6 @@ margin-bottom: 25px;
   outline: 0;
   flex-grow: 0;
   border-radius: 50%;
-  background-color: #FFFFFF;
   transition: background 300ms;
   cursor: pointer;
 }
@@ -457,13 +461,11 @@ margin-bottom: 25px;
 
 [type=checkbox]::before {
   content: "";
-  color: transparent;
   display: block;
   width: inherit;
   height: inherit;
   border-radius: inherit;
-  border: 0;
-  background-color: transparent;
+  border: 2px solid;
   background-size: contain;
   box-shadow: inset 0 0 0 1px #CCD3D8;
 }
@@ -471,8 +473,20 @@ margin-bottom: 25px;
 
 /* Checked */
 
-[type=checkbox]:checked {
-  background-color: currentcolor;
+.check-box-one.color1 [type=checkbox]:checked {
+  background-color: #ffc8dd;
+}
+
+.check-box-one.color2 [type=checkbox]:checked {
+  background-color: #ceedc7;
+}
+
+.check-box-one.color3 [type=checkbox]:checked {
+  background-color: #ffd4b2;
+}
+
+.check-box-one.color4 [type=checkbox]:checked {
+  background-color: #fff6bd;
 }
 
 [type=checkbox]:checked::before {
