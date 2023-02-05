@@ -31,6 +31,8 @@ function App() {
           <Route path="/seans-liste" element={<SessionList/>} />
           <Route path="/terapist-ekle" element={<AddTherapist/>} />
           <Route path="/danisanlarim" element={<Clients/>} />
+          <Route path="/etkinlik-olustur" element={<CreateAct/>} />
+          <Route path="/takvim" element={<Calendar/>} />
        </Routes>
       
 
