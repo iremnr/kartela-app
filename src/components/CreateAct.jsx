@@ -41,7 +41,8 @@ function CreateAct() {
   document.title = "Etkinlik Oluştur";
   
   return (
-    <Container fluid xs={6} sm={4} md={4} lg={4} xl={4} className="page-container">
+    <Container fluid className="page-container">
+        <Container fluid xs={6} sm={4} md={4} lg={4} xl={4} className="inner-container">
       <Row className="page-header" xs={12} sm={12} md={12} lg={12} xl={12}>
         <Col className="prev-page"> <BsArrowLeftCircle size={50} color="#369CC0"/></Col>
         <Col sm={6} md={6} lg={3}>
@@ -138,13 +139,14 @@ function CreateAct() {
             <Col className="to-do-message">Learn Design Pattern</Col>
           </Row>
           <Row className="to-do-two">
-            <Col className="to-do-hour col-3">10.59 AM</Col>
+            <Col className="to-do-hour-two col-3">10.59 AM</Col>
            
             <Col className="to-do-message">Learn Design Pattern</Col>
           </Row>
           <Row className="today-text">That's all for today!</Row>
         </Col>
       </Row>
+    </Container>
     </Container>
   );
 }
