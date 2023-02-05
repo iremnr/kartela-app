@@ -2,11 +2,8 @@ import "@fontsource/roboto";
 import { useState } from "react";
 import "../App.css";
 import logo from "../logoKartela.svg";
-import figure from "../back-page.svg";
 import 'react-calendar/dist/Calendar.css'
 import { Button, Col, Container, Row } from "react-bootstrap";
-import Form from 'react-bootstrap/Form';
-import FieldGroup from 'react-bootstrap/Form';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
@@ -48,16 +45,17 @@ function AddSession() {
   document.title = "Seans Ekle";
   
   return (
-    <Container fluid xs={6} sm={4} md={4} lg={4} xl={4} className="page-container">
+    <Container fluid className="page-container">
+      <Container fluid xs={6} sm={4} md={4} lg={4} xl={4} className="inner-container">
       <Row className="page-header" xs={12} sm={12} md={12} lg={12} xl={12}>
         <Col className="prev-page"> <BsArrowLeftCircle size={50} color="#369CC0"/></Col>
-      <Col><img src={logo} className="kartela-logo" alt="logo" /></Col>
+      <Col className="kartela-logo" lg={3}><img src={logo}  alt="logo" /></Col>
     </Row>
     <Row className="add-session-title">SEANS EKLE</Row><Row className="session-page-body" xs={12} sm={12} md={8} lg={8} xl={8}>
         <Col className="session-left">
           <Row className="form-title">DANIŞAN İSİM/SOYİSİM</Row>
           <Row className="form-box">
-          <input
+          <input className="form-box-input"
               type="text"
               placeholder="Danışan adını giriniz"
               value={name}
@@ -65,7 +63,7 @@ function AddSession() {
           </Row>
           <Row className="form-title">ODA</Row>
           <Row className="form-box">
-            <select value={room} onChange={(e) => setRoom(e.target.value)}>
+            <select  className="form-box-input" value={room} onChange={(e) => setRoom(e.target.value)}>
               {rooms.map((room) => (
                 <option value={room.key} key={room.key}>
                   {room.value}
@@ -75,7 +73,7 @@ function AddSession() {
           </Row>
           <Row className="form-title">YAŞ</Row>
           <Row className="form-box">
-            <input
+            <input  className="form-box-input"
               type="text"
               placeholder="Danışan yaşını giriniz"
               value={age}
@@ -83,7 +81,7 @@ function AddSession() {
           </Row>
           <Row className="form-title">CİNSİYET</Row>
           <Row className="form-box">
-            <select value={gender} onChange={(e) => setGender(e.target.value)}>
+            <select  className="form-box-input" value={gender} onChange={(e) => setGender(e.target.value)}>
               {genders.map((gender) => (
                 <option value={gender.key} key={gender.key}>
                   {gender.value}
@@ -95,13 +93,13 @@ function AddSession() {
           <Row className="form-title">TARİH</Row>
           <Row className="form-box">
             <form>
-              <input type="date" value={date} onChange={e => setDate(e.target.value)} />
+              <input className="form-box-input" type="date" value={date} onChange={e => setDate(e.target.value)} />
             </form>
           </Row>
           <Row className="form-title">SAAT</Row>
           <Row className="form-box">
             <form>
-              <select value={time} onChange={e => setTime(e.target.value)}>
+              <select  className="form-box-input" value={time} onChange={e => setTime(e.target.value)}>
                 {hours.map(hour => (
                   <option value={hour} key={hour}>{hour}</option>
                 ))}
@@ -112,7 +110,7 @@ function AddSession() {
           <Row className="form-title">KATEGORİ</Row>
           <Row className="form-box">
             <form>
-              <select value={category} onChange={(e) => setCategory(e.target.value)}>
+              <select  className="form-box-input" value={category} onChange={(e) => setCategory(e.target.value)}>
                 <option value="" disabled>Kategori seçiniz</option>
                 {categories.map(category => (
                   <option value={category} key={category}>{category}</option>
@@ -146,18 +144,17 @@ function AddSession() {
               eventClick={(e) => console.log(e.event.id)} />
           </Row>
           <Row className="to-do-one">
-            <Col className="to-do-hour">10.59 AM</Col>
-            <Col className="to-do-line1"></Col>
+            <Col className="to-do-hour col-3">10.59 AM</Col>
             <Col className="to-do-message">Learn Design Pattern</Col>
           </Row>
           <Row className="to-do-two">
-            <Col className="to-do-hour">10.59 AM</Col>
-            <Col className="to-do-line2"></Col>
+            <Col className="to-do-hour-two col-3">10.59 AM</Col>
             <Col className="to-do-message">Learn Design Pattern</Col>
           </Row>
           <Row className="today-text">That's all for today!</Row>
         </Col>
       </Row>
+    </Container>
     </Container>
   );
 }

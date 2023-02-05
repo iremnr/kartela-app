@@ -1,10 +1,17 @@
 
 /*SEANS EKLE*/
 .page-container{
-  border: 1rem solid;
-  border-color: #369CC0;
+background-color:#369CC0;
+border: 1-rem solid;
+min-height: 100vh;
+min-width: 100vw;
+padding-top: 20px;
 }
 
+.inner-container{
+  background-color: white;
+  border-radius: 10px;
+}
 .page-header{
 }
 .prev-page{
@@ -48,6 +55,7 @@
   padding-top: 15px;
   padding-bottom: 5px;
   color: #49444C; 
+
 }
 
 .form-box{
@@ -59,6 +67,13 @@
   border-radius: 8px;
   padding-top: 2px;
   padding-right: 30px;
+  align-items: center;
+
+}
+
+
+.form-box-input{
+  outline: none;
 }
 
 .calendar-title{
@@ -112,20 +127,13 @@
   margin-top: 20px;
 }
 .to-do-hour{
+  border-right: 2px solid #DE7E7E;
+}
+.to-do-hour-two{
+  border-right: 2px solid #9BE4B4;
 }
 .to-do-message{
   text-align: end;
-}
-.to-do-line1{
-height: 0px;
-border: 1px solid #DE7E7E;
-transform: rotate(90deg);
-}
-
-.to-do-line2{
-height: 0px;
-border: 1px solid #9BE4B4;
-transform: rotate(90deg);
 }
 
 .to-do-two{
