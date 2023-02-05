@@ -7,49 +7,52 @@ import { BsArrowLeftCircle } from "react-icons/bs";
 
 
 function User_menu() {
+
+    document.title = "Menü";
+
     return (
-        <Container fluid className="app">
-            <Row className="row-out">
-                <Row className="row-body">
+        <div className='container-fluid bg-kartela p-4'>
+            <div className="bg-white rounded-2xl p-10">
+                                
+                <div className="row">
+                    <div className="col-sm-4 vector" >
+                        <BsArrowLeftCircle size={50} color="#369CC0"/>
+                    </div>
+                    <div className="col-sm-8 p-0" >
+                        <img className="menu-kartela-logo" src={kartela_logo} alt="" />
+                    </div>
+                </div>
 
-                    <Row>
-                        <Col sm={4} className="vector" >
-                            <BsArrowLeftCircle size={50} color="#369CC0"/>
-                        </Col>
-                        <Col sm={8} className="" >
-                            <img className="" src={kartela_logo} alt="" />
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col md={6}>
-                            
-                            <div className="Card-1 mb-8">
+                <div className='row px-20'>
+                    <div className='col-lg-6'>
+                        <div className='row px-6'>
+                            <div className='card-1 mb-3'>
                                 <h1 className='card-yazi-1'>TAKVİM</h1>
                             </div>
-
-                            <div className="Card-1 mb-8">
+                            <div className='card-1 mb-3'>
                                 <h1 className='card-yazi-1'>ETKİNLİK OLUŞTUR</h1>
                             </div>
-                        </Col>
+                        </div>
+                    </div>
 
-                        <Col md={6}>
-                            <div className="Card-1 mb-8" >
+                    <div className='col-lg-6'>
+                        <div className='row px-6'>
+                            <div className='card-1 mb-3'>
                                 <h1 className='card-yazi-1'>SEANS OLUŞTUR</h1>
                             </div>
+                            <div className='card-2 mb-2'>
+                                    <h1 className='card-yazi-2'>SEANSLARIM</h1>
+                            </div>
+                            <div className='card-2'>
+                                    <h1 className='card-yazi-2'>DANIŞANLARIM</h1>
+                            </div>
+                        </div>
+                    </div>
 
-                            <div className='Card-2 mb-8'>
-                                <h1 className='card-yazi-2'>SEANSLARIM</h1>
-                            </div>
-                            <div className='Card-2 mb-8'>
-                                <h1 className='card-yazi-2'>DANIŞANLARIM</h1>
-                            </div>
-                            
-                        </Col>
-                    </Row>
-                </Row>
-            </Row>
-        </Container>
+                </div>
+
+            </div>
+        </div>
     )
 }
 
