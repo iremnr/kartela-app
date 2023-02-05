@@ -459,17 +459,49 @@ text-indent: 3px;
 
 /* Pseudo element for check styling */
 
-[type=checkbox]::before {
+.check-box-one.color1 [type=checkbox]::before {
   content: "";
   display: block;
   width: inherit;
   height: inherit;
+  border: 1px solid #ffc8dd;
   border-radius: inherit;
-  border: 2px solid;
   background-size: contain;
   box-shadow: inset 0 0 0 1px #CCD3D8;
 }
 
+.check-box-one.color2 [type=checkbox]::before {
+  content: "";
+  display: block;
+  width: inherit;
+  height: inherit;
+  border: 1px solid #ceedc7;
+  border-radius: inherit;
+  background-size: contain;
+  box-shadow: inset 0 0 0 1px #CCD3D8;
+}
+
+.check-box-one.color3 [type=checkbox]::before {
+  content: "";
+  display: block;
+  width: inherit;
+  height: inherit;
+  border: 1px solid #ffd4b2;
+  border-radius: inherit;
+  background-size: contain;
+  box-shadow: inset 0 0 0 1px #CCD3D8;
+}
+
+.check-box-one.color4 [type=checkbox]::before {
+  content: "";
+  display: block;
+  width: inherit;
+  height: inherit;
+  border: 1px solid #fff6bd;
+  border-radius: inherit;
+  background-size: contain;
+  box-shadow: inset 0 0 0 1px #CCD3D8;
+}
 
 /* Checked */
 
