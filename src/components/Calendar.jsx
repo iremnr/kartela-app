@@ -57,7 +57,20 @@ function Calendar() {
           eventClick={(e) => console.log(e.event.id)}
         />
       </Row>
-      
+    </Row>
+    <Row className="deneme">
+    <Row className="to-do-one">
+            <Col className="to-do-hour col-3">10.59 AM</Col>
+           
+            <Col className="to-do-message">Learn Design Pattern</Col>
+          </Row>
+    </Row>
+    <Row className="deneme">
+    <Row className="to-do-two">
+            <Col className="to-do-hour col-3">10.59 AM</Col>
+           
+            <Col className="to-do-message">Learn Design Pattern</Col>
+          </Row>
     </Row>
   </Container>
   );
