@@ -25,7 +25,8 @@ function Calendar() {
   document.title = "Takvim";
   
   return (
-    <Container fluid>
+    <Container fluid className="page-container">
+    <Container fluid xs={6} sm={4} md={4} lg={4} xl={4} className="inner-container">
     <Row className="page-header">
       <Col className="prev-page">
         {" "}
@@ -67,11 +68,12 @@ function Calendar() {
     </Row>
     <Row className="deneme">
     <Row className="to-do-two">
-            <Col className="to-do-hour col-3">10.59 AM</Col>
+            <Col className="to-do-hour-two col-3">10.59 AM</Col>
            
             <Col className="to-do-message">Learn Design Pattern</Col>
           </Row>
     </Row>
+  </Container>
   </Container>
   );
 }
