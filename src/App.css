@@ -6,11 +6,14 @@ border: 1-rem solid;
 min-height: 100vh;
 min-width: 100vw;
 padding-top: 20px;
+padding-bottom: 20px;
 }
 
 .inner-container{
   background-color: white;
   border-radius: 10px;
+  min-height: 98vh;
+min-width: 98vw;
 }
 .page-header{
 }
@@ -21,7 +24,6 @@ padding-top: 20px;
 .kartela-logo{
   width: 344px;
   height: 189px;
-  margin-top: 7px;
 }
 
 .add-session-title{
@@ -202,8 +204,13 @@ margin-left: 20px;
 
 
 /*ODA EKLE*/
-.room-body{
-  width: 1fr;
+.cont-deneme{
+  justify-self: center;
+  text-align: center;
+  align-items: center;
+}
+.cont-deneme-2{
+  justify-content: center;
 }
 .room-name{
   font-family: 'Roboto';
@@ -214,11 +221,35 @@ margin-left: 20px;
   line-height: 19px;
   color: #49444C;
 }
-
+.room-form-box{
+  box-sizing: border-box;
+  width: 430px;
+  height: 45.42px;
+  border: 2.5px solid #9C89B8;
+  border-radius: 8px;
+  padding-top: 2px;
+  padding-right: 30px;
+  align-items: center; 
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.room-title,
+.color-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  color: #49444C; 
+  margin-top: 40px;
+  margin-right: -12px;
+}
 .color-box{ 
   box-sizing: border-box;
   justify-content: center;
-  width: 430px;
   height: 45.42px;
   border: 1px solid #9C89B8;
   border-radius: 8px;
@@ -230,14 +261,45 @@ margin-left: 20px;
   display: table;
 }
 
-.colors{
-  max-width: max-content;
+
+.room-page-content{
   justify-content: center;
   align-items: center;
-  font-weight: 400;
 }
+.colors{
+  justify-content: space-between;
+  margin-top: 2px;
+  width: 440px;
+
+}
+
+.room-submit{
+  width: 430px;
+  height: 60.56px;
+  margin-bottom: 40px;
+  margin-top: 70px;
+  margin-left: -12px;
+  justify-content: center;
+  background: #9C89B8;
+  border: 2px;
+  border-radius: 8px;  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.room-submit:hover{
+  transition: 0.15s;
+  background-color:#6e6084;
+  }
+
 .green-button{
-  width: 55px;
+  width: 50px;
   height: 45.42px;;
   background: #CEEDC7;
   border-radius: 8px;
@@ -245,9 +307,9 @@ margin-left: 20px;
 }
 
 .red-button{
-  padding-left: 1px;
-  padding-right: 1px;
-  width: 55px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 50px;
   height: 45.42px;
   background: #FF9494;
   border-radius: 8px; 
@@ -255,7 +317,8 @@ margin-left: 20px;
 }
 
 .orange-button{
-  width: 55px;
+  margin-right: 5px;
+  width: 50px;
   height: 45.42px;
   background: #FFD4B2;
   border-radius: 8px;
@@ -263,7 +326,8 @@ margin-left: 20px;
 }
 
 .yellow-button{
-  width: 55px;
+  margin-right: 5px;
+  width: 50px;
   height: 45.42px;
   background: #FFF6BD;
   border-radius: 8px;
@@ -271,7 +335,8 @@ margin-left: 20px;
 }
 
 .purple-button{
-  width: 55px;
+  margin-right: 5px;
+  width: 50px;
   height: 45.42px;
   background: #D7E3FC;
   border-radius: 8px;
@@ -279,7 +344,7 @@ margin-left: 20px;
 }
 
 .pink-button{
-  width: 55px;
+  width: 50px;
   height: 45.42px;
   background: #FFC8DD;
   border-radius: 8px;
@@ -326,11 +391,15 @@ margin-left: 20px;
 transition: 0.15s;
 background-color:#1d7c9f;
 }
+
+
+  
 /*ODA EKLE*/
 
 /*SEANSLARIM*/
 .deneme{
   justify-content: center;
+  align-items: center;
 }
 .session-col{
 max-width: fit-content;
