@@ -8,7 +8,8 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import { BsArrowLeftCircle } from "react-icons/bs";
-
+import React, { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 
   const events = [
     {
@@ -23,15 +24,24 @@ import { BsArrowLeftCircle } from "react-icons/bs";
 function Calendar() {
   
   document.title = "Takvim";
+
+
+
+  const history = useNavigate();
+  const handleClick = useCallback(() => {
+    history.push("/menu");
+  }, [history]);
   
   return (
     <Container fluid className="page-container">
     <Container fluid xs={6} sm={4} md={4} lg={4} xl={4} className="inner-container">
     <Row className="page-header">
-      <Col className="prev-page">
+   
+      <Col onClick={handleClick} className="prev-page">
         {" "}
         <BsArrowLeftCircle size={50} color="#369CC0" />
       </Col>
+      
       <Col sm={6} md={6} lg={3}>
         <img src={logo} className="kartela-logo" alt="logo" />
       </Col>

@@ -1,20 +1,11 @@
 
-import React, { isValidElement } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import React from "react";
 import kartela_logo from '../assets/logo_kartela.png';
 import { FiTrash } from "react-icons/fi";
-import Table from 'react-bootstrap/Table';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
-import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import Button from 'react-bootstrap/Button';
 import { BsArrowLeftCircle } from "react-icons/bs";
 import { FiEdit2 } from "react-icons/fi";
 import { BiPlusCircle } from "react-icons/bi";
 import "@fontsource/roboto";
-import { VscSearch } from "react-icons/vsc";
 import "@fontsource/montserrat";
 
 
